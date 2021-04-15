@@ -19,4 +19,6 @@ jobs:
           ls vocpub.ttl
       - name: Validate all vocabs
         run: |
-          pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
+          pwd
+          ls
+          # pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
