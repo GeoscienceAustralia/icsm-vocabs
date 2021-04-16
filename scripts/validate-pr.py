@@ -18,6 +18,8 @@ for f in vocabs_dir.iterdir():
             invalid_vocabs.append(f.name)
 
 if len(invalid_vocabs) > 0:
-    print(invalid_vocabs)
+    print("Invalid Vocabs:")
+    for iv in invalid_vocabs:
+        print("\t-{}".format(iv))
 
 assert len(invalid_vocabs) == 0
