@@ -21,7 +21,5 @@ jobs:
         uses: actions/checkout@v1
       - name: Validate all vocabs
         run: |
-          echo "do nothing"
-          ls
-          # pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
+          pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
           
