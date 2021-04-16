@@ -22,5 +22,6 @@ jobs:
       - name: Validate all vocabs
         run: |
           echo "do nothing"
+          ls
           # pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
           
