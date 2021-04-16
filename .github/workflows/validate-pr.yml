@@ -13,13 +13,12 @@ jobs:
         run: |
           python -m pip install -U pip
           pip install pyshacl
+      - name: Bring in repo         
+        uses: actions/checkout@v1
       - name: Load Validator
         run: |
           curl -L https://w3id.org/profile/vocpub/validator > vocpub.ttl
           ls vocpub.ttl
-      - name: Bring in repo         
-        uses: actions/checkout@v1
-      - name: Validate all vocabs
+      - name: Validate vocabs
         run: |
-          pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
-          
+          pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl          
