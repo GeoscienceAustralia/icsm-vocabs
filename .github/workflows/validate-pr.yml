@@ -18,7 +18,7 @@ jobs:
           curl -L https://w3id.org/profile/vocpub/validator > vocpub.ttl
           ls vocpub.ttl
       - name: Bring in repo         
-      - uses: actions/checkout@v1
+        uses: actions/checkout@v1
       - name: Validate all vocabs
         run: |
           echo "do nothing"
