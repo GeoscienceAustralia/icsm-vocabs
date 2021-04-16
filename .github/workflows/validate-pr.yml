@@ -22,3 +22,4 @@ jobs:
           pwd
           ls
           # pyshacl -s vocpub.ttl vocabularies/AddressTypes.ttl
+          
