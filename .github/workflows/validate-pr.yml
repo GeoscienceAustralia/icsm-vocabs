@@ -1,4 +1,4 @@
-name: Validate PVocabs on Rs to Master
+name: Validate Vocabs on PRs to Master
 on:
   pull_request:
     branches: [ master ]
