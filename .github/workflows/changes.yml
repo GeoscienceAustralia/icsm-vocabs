@@ -1,4 +1,9 @@
-on: [push]
+name: Validate Vocabs on PRs to Master
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
 jobs:
   changes:
     runs-on: ubuntu-latest
