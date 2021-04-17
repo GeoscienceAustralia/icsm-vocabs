@@ -11,13 +11,14 @@ jobs:
       - id: file_changes
         uses: trilom/file-changes-action@v1.2.3
         with:
-          output: ','
-          run: |
-            echo 'files:'
-            echo '${{ steps.file_changes.outputs.files}}'
-            echo 'files modified:'            
-            echo '${{ steps.file_changes.outputs.files_modified}}'
-            echo 'files added:'            
-            echo '${{ steps.file_changes.outputs.files_added}}'
-            echo 'files removed:'            
-            echo '${{ steps.file_changes.outputs.files_removed}}'
+          output: ','        
+      - name: test
+        run: |
+          echo 'files:'
+          echo '${{ steps.file_changes.outputs.files}}'
+          echo 'files modified:'            
+          echo '${{ steps.file_changes.outputs.files_modified}}'
+          echo 'files added:'            
+          echo '${{ steps.file_changes.outputs.files_added}}'
+          echo 'files removed:'            
+          echo '${{ steps.file_changes.outputs.files_removed}}'
