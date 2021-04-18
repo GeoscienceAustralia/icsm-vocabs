@@ -18,4 +18,4 @@ jobs:
             DB_PASSWORD: ${{secrets.DB_PASSWORD}}      
         run: |
           echo 'Run update script...'
-          echo 'python scripts/update.py -a ${{steps.file_changes.outputs.files_added}} -m ${{steps.file_changes.outputs.files_modified}} -r ${{steps.file_changes.outputs.files_removed}}'
+          echo 'python scripts/update_vocabs.py -a ${{steps.file_changes.outputs.files_added}} -m ${{steps.file_changes.outputs.files_modified}} -r ${{steps.file_changes.outputs.files_removed}}'
