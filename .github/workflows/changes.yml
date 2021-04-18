@@ -21,8 +21,8 @@ jobs:
           echo 'files removed:'            
           echo '${{steps.file_changes.outputs.files_removed}}'
           
-          for name in ${{steps.file_changes.outputs.files_modified}@}; echo $name
+          for name in '${{steps.file_changes.outputs.files_modified}}'; echo $name
           
           echo "\n\n"
           
-          for name in ${{steps.file_changes.outputs.files_added}[@]}; echo $name
+          #for name in ${{steps.file_changes.outputs.files_added}[@]}; echo $name
