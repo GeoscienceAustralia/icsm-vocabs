@@ -14,9 +14,5 @@ jobs:
           output: ','        
       - name: detect file changes
         run: |
-          echo 'files modified:'            
-          echo 'python modified.py ${{steps.file_changes.outputs.files_modified}}'
-          echo 'files added:'            
-          echo '${{steps.file_changes.outputs.files_added}}'
-          echo 'files removed:'            
-          echo '${{steps.file_changes.outputs.files_removed}}'
+          echo 'Run update script...'
+          echo 'python scripts/update.py -a ${{steps.file_changes.outputs.files_added}} -m ${{steps.file_changes.outputs.files_modified}} -r ${{steps.file_changes.outputs.files_removed}}'
