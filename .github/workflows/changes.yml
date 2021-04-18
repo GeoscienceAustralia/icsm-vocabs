@@ -1,4 +1,4 @@
-name: Validate Vocabs on PRs to Master
+name: Push updated vocabs
 on:
   push:
     branches: [ master ]
@@ -14,8 +14,6 @@ jobs:
           output: ','        
       - name: test
         run: |
-          echo 'files:'
-          echo '${{ steps.file_changes.outputs.files}}'
           echo 'files modified:'            
           echo '${{ steps.file_changes.outputs.files_modified}}'
           echo 'files added:'            
