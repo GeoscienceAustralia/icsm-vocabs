@@ -9,7 +9,7 @@
 @prefix da: <http://linked.data.gov.au/def/data-access-rights/> .
 
 <http://linked.data.gov.au/def/data-access-rights> a owl:Ontology , skos:ConceptScheme ;
-    skos:definition "Data access rights control how users and systems access a data resource."@en ;
+    skos:definition "Data access rights control how users and systems access a data resource. test"@en ;
     skos:historyNote "This vocabulary is taken from the COAR Controlled Vocabularies Interest Group (http://vocabularies.coar-repositories.org/documentation/access_rights/) but is redelivered as that vocabulary isn't well presented online."@en ;
     dcterms:source <http://vocabularies.coar-repositories.org/documentation/access_rights/> ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
