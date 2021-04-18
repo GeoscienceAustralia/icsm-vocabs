@@ -12,11 +12,15 @@ jobs:
         uses: trilom/file-changes-action@v1.2.3
         with:
           output: ','        
-      - name: test
+      - name: detect file changes
         run: |
           echo 'files modified:'            
-          echo '${{ steps.file_changes.outputs.files_modified}}'
+          echo '${{steps.file_changes.outputs.files_modified}}'
           echo 'files added:'            
-          echo '${{ steps.file_changes.outputs.files_added}}'
+          echo '${{steps.file_changes.outputs.files_added}}'
           echo 'files removed:'            
-          echo '${{ steps.file_changes.outputs.files_removed}}'
+          echo '${{steps.file_changes.outputs.files_removed}}'
+          
+          for name in ${steps.file_changes.outputs.files_modified} do
+            echo $name + "\n"
+          done
