@@ -1,0 +1,22 @@
+name: Push updated vocabs
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.3
+        with:
+          output: ','        
+      - name: test
+        run: |
+          echo 'files modified:'            
+          echo '${{ steps.file_changes.outputs.files_modified}}'
+          echo 'files added:'            
+          echo '${{ steps.file_changes.outputs.files_added}}'
+          echo 'files removed:'            
+          echo '${{ steps.file_changes.outputs.files_removed}}'
