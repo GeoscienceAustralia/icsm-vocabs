@@ -22,5 +22,11 @@ jobs:
           echo '${{steps.file_changes.outputs.files_removed}}'
           
           for name in ${steps.file_changes.outputs.files_modified} do
-            echo $name + "\n"
+            echo $name "\n"
           done
+          
+          echo "\n\n"
+          
+          for name in ${steps.file_changes.outputs.files_added} do
+            echo $name "\n"
+          done          
