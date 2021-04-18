@@ -15,14 +15,8 @@ jobs:
       - name: detect file changes
         run: |
           echo 'files modified:'            
-          echo '${{steps.file_changes.outputs.files_modified}}'
+          echo 'python modified.py ${{steps.file_changes.outputs.files_modified}}'
           echo 'files added:'            
           echo '${{steps.file_changes.outputs.files_added}}'
           echo 'files removed:'            
           echo '${{steps.file_changes.outputs.files_removed}}'
-          
-          for name in '${{steps.file_changes.outputs.files_modified}}'; echo $name
-          
-          echo "\n\n"
-          
-          #for name in ${{steps.file_changes.outputs.files_added}[@]}; echo $name
