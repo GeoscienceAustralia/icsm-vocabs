@@ -13,10 +13,9 @@ jobs:
         with:
           output: ','        
       - name: detect file changes
+        env:
+            DB_USERNAME: ${{secrets.DB_USERNAME}}
+            DB_PASSWORD: ${{secrets.DB_PASSWORD}}      
         run: |
-          echo 'files modified:'            
-          echo 'python modified.py ${{steps.file_changes.outputs.files_modified}}'
-          echo 'files added:'            
-          echo '${{steps.file_changes.outputs.files_added}}'
-          echo 'files removed:'            
-          echo '${{steps.file_changes.outputs.files_removed}}'
+          echo 'Run update script...'
+          echo 'python scripts/update_vocabs.py -a ${{steps.file_changes.outputs.files_added}} -m ${{steps.file_changes.outputs.files_modified}} -r ${{steps.file_changes.outputs.files_removed}}'
