@@ -14,7 +14,7 @@ cs: a skos:ConceptScheme ;
     dcterms:created "2018-02-10"^^xsd:date ;
     dcterms:issued "2018-04-16"^^xsd:date ;
     dcterms:modified "2021-04-20"^^xsd:date ;
-    dcterms:provenance "This vocabulary was generated from entries in the G-NAF Data Product Description, November 2017: Address_TYPE_AUT" ;
+    dcterms:provenance "This vocabulary was generated from the G-NAF Data Product Description, November 2017, table Address_TYPE_AUT" ;
     skos:definition "This vocabulary contains types of addresses as described by the Geocoded National Address File (GNAF). The vocabulary is derived from the GNAF's Address Type code list which is presented within the relational database versions of the GNAF as an authority table (lookup table). The values here are documented in the GNAF product guide. This vocabulary was originally created from the December, 2017, version of that guide." ;
     owl:versionInfo "2017-12"^^xsd:string ;
     skos:hasTopConcept :Rural , :Unknown , :Urban .
