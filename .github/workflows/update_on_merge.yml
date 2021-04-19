@@ -18,7 +18,7 @@ jobs:
             DB_PASSWORD: ${{secrets.DB_PASSWORD}}      
         run: |
           echo 'Run update script...'
-          if [[ ${{steps.file_changes.outputs.files_added}} ]]; then a=${{steps.file_changes.outputs.files_added}}; else a=""; fi
-          if [[ ${{steps.file_changes.outputs.files_modified}} ]]; then m=${{steps.file_changes.outputs.files_modified}}; else m=""; fi
-          if [[ ${{steps.file_changes.outputs.files_removed}} ]]; then r=${{steps.file_changes.outputs.files_removed}}; else r=""; fi
+          if [[ -z ${{steps.file_changes.outputs.files_added}} ]]; then a=""; else a=${{steps.file_changes.outputs.files_added}}; fi
+          if [[ -z ${{steps.file_changes.outputs.files_modified}} ]]; then m=""; else m=${{steps.file_changes.outputs.files_modified}}; fi
+          if [[ -z ${{steps.file_changes.outputs.files_removed}} ]]; then r=""; else r=${{steps.file_changes.outputs.files_removed}}; fi
           echo 'python scripts/update_vocabs.py -a $a -m $m -r $r'
