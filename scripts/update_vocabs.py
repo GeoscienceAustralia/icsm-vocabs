@@ -135,3 +135,7 @@ if __name__ == "__main__":
     print("removed:")
     print([str(x) for x in removed])
 
+    # rebuild VocPrez' cache
+    r = httpx.get("http://icsm.surroundaustralia.com/cache-reload")
+    assert r.status_code == 200
+
