@@ -8,6 +8,8 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     steps:
+      - name: Bring in repo
+        uses: actions/checkout@v1-
       - id: file_changes
         uses: trilom/file-changes-action@v1.2.3
         with:
