@@ -27,13 +27,7 @@ jobs:
           a=${{steps.file_changes.outputs.files_added}}
           m=${{steps.file_changes.outputs.files_modified}}
           r=${{steps.file_changes.outputs.files_removed}}
-          echo "a"
-          echo $a
-          echo "m"
-          echo $m
-          echo "r"
-          echo $r          
-          if [ -z $a ]; then a=""; fi
-          if [ -z $m ]; then m=""; fi
-          if [ -z $r ]; then r=""; fi
+          if [ -z $a ]; then a="x"; fi
+          if [ -z $m ]; then m="x"; fi
+          if [ -z $r ]; then r="x"; fi
           python scripts/update_vocabs.py -a $a -m $m -r $r
