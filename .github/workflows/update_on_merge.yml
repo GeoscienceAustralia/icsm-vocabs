@@ -27,7 +27,7 @@ jobs:
           echo $m
           echo "r"
           echo $r          
-          if [[ -z $a ]]; then $a = ""; fi
-          if [[ -z $m ]]; then $m = ""; fi
-          if [[ -z $r ]]; then $r = ""; fi
+          if [ -z $a ]; then $a = ""; fi
+          if [ -z $m ]; then $m = ""; fi
+          if [ -z $r ]; then $r = ""; fi
           echo 'python scripts/update_vocabs.py -a $a -m $m -r $r'
