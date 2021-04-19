@@ -75,21 +75,21 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     modified = []
-    if args.modified is not None:
+    if args.modified:
         for f in args.modified.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 modified.append(Path(f))
 
     added = []
-    if args.added is not None:
+    if args.added:
         for f in args.added.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 added.append(Path(f))
 
     removed = []
-    if args.removed is not None:
+    if args.removed:
         for f in args.removed.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
