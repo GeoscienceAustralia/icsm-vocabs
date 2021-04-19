@@ -1,3 +1,4 @@
+import json
 from typing import List
 import argparse
 from pathlib import Path
@@ -17,6 +18,7 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
+        add_to_vocab_index(vocab, get_graph_uri_for_vocab(vocab))
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
@@ -27,6 +29,7 @@ def remove_vocabs(vocabs: List[Path], mappings: dict):
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
+        remove_from_vocab_index(vocab)
 
 
 def get_graph_uri_for_vocab(vocab: Path) -> URIRef:
@@ -44,6 +47,24 @@ def get_all_vocabs_uris(vocabs: List[Path]) -> dict:
         mappings[vocab.name] = get_graph_uri_for_vocab(vocab)
 
     return mappings
+
+
+def add_to_vocab_index(file_path: Path, graph_uri: URIRef):
+    i = Path(__file__).parent.parent / "vocabularies" / "index.json"
+    with open(i, "r") as f:
+        mappings = json.load(f)
+    with open(i, "w") as f:
+        mappings[str(file_path)] = str(graph_uri)
+        f.write(json.dumps(mappings))
+
+
+def remove_from_vocab_index(file_path: Path):
+    i = Path(__file__).parent.parent / "vocabularies" / "index.json"
+    with open(i, "r") as f:
+        mappings = json.load(f)
+    del mappings[str(file_path)]
+    with open(i, "w") as f:
+        f.write(json.dumps(mappings))
 
 
 if __name__ == "__main__":
@@ -86,18 +107,20 @@ if __name__ == "__main__":
         for f in args.added.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
-                added.append(Path(f))
+                p = Path(f)
+                added.append(p)
 
     removed = []
     if args.removed:
         for f in args.removed.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
-                removed.append(Path(f))
+                p = Path(f)
+                removed.append(p)
 
-    # map vocab files to graph_uris
-    mappings = get_all_vocabs_uris(list(set(modified + added + removed)))
-
+    i = Path(__file__).parent.parent / "vocabularies" / "index.json"
+    with open(i, "r") as f:
+        mappings = json.load(f)
     # remove all removed and modified vocabs
     remove_vocabs(removed + modified, mappings)
 
