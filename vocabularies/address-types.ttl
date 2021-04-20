@@ -154,7 +154,7 @@ cs: a skos:ConceptScheme ;
   dcterms:provenance "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   rdfs:isDefinedBy cs: ;
   skos:inScheme cs: ;
-  skos:topCoceptOf cs: ;
+  skos:topConceptOf cs: ;
 .
 
 :RuralBlock a skos:Concept ;
@@ -294,7 +294,7 @@ cs: a skos:ConceptScheme ;
   dcterms:provenance "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   rdfs:isDefinedBy cs: ;
   skos:inScheme cs: ;
-  skos:topCoceptOf cs: ;
+  skos:topConceptOf cs: ;
 .
 
 :UnknownVilla a skos:Concept ;
@@ -564,7 +564,7 @@ cs: a skos:ConceptScheme ;
   dcterms:provenance "G-NAF Data Product Description, November 2017: Address_TYPE_AUT"^^xsd:string ;
   rdfs:isDefinedBy cs: ;
   skos:inScheme cs: ;
-  skos:topCoceptOf cs: ;
+  skos:topConceptOf cs: ;
 .
 
 :UrbanBlock a skos:Concept ;
