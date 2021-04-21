@@ -17,4 +17,4 @@ jobs:
           pip install -r scripts/requirements.txt
       - name: Validate all vocabs
         run: |
-          python scripts/validate-pr.py
+          python scripts/validate_vocabs.py
