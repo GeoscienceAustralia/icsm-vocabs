@@ -11,13 +11,13 @@
 cs: 
     a skos:ConceptScheme ;
     skos:prefLabel "FSDF Themes" ;
-    dcterms:publisher <https://linked.data.gov.au/org/psma> ;
-    dcterms:created "2018-02-10"^^xsd:date ;
-    dcterms:issued "2018-04-16"^^xsd:date ;
-    dcterms:modified "2021-04-20"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:created "2021-04-21"^^xsd:date ;
+    dcterms:modified "2021-04-21"^^xsd:date ;
     dcterms:provenance "This vocabulary was generated from the G-NAF Data Product Description, November 2017, table Address_TYPE_AUT" ;
-    skos:definition "This vocabulary contains types of addresses as described by the Geocoded National Address File (GNAF). The vocabulary is derived from the GNAF's Address Type code list which is presented within the relational database versions of the GNAF as an authority table (lookup table). The values here are documented in the GNAF product guide. This vocabulary was originally created from the December, 2017, version of that guide." ;
-    owl:versionInfo "2017-12"^^xsd:string ;
+    skos:definition "This FSDF Themes vocabulary is the taxonomy of dataset themes implemented by the [ANZLIC - The Spatial  Information Council](https://www.anzlic.gov.au)'s' Foundation Spatial Data Framework (FSDF) project which is \"a common reference for the assembly and maintenance of Australian and New Zealand foundation level spatial data\"" ;
+    owl:versionInfo "1.0"^^xsd:string ;
     skos:hasTopConcept 
         :administrative-boundaries , 
         :elevation-and-depth , 
