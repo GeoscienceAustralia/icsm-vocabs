@@ -15,7 +15,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
     dcterms:created "2021-04-21"^^xsd:date ;
     dcterms:modified "2021-04-21"^^xsd:date ;
-    dcterms:provenance "This vocabulary was generated from the FSDF LINK website which containes all this information n non-Semantic Web but highly structured, form" ;
+    dcterms:provenance "This vocabulary was generated from the FSDF LINK website which containes all this information in non-Semantic Web but highly structured, form" ;
     skos:definition "This FSDF Themes vocabulary is the taxonomy of dataset themes implemented by the [ANZLIC - The Spatial  Information Council](https://www.anzlic.gov.au)'s' Foundation Spatial Data Framework (FSDF) project which is \"a common reference for the assembly and maintenance of Australian and New Zealand foundation level spatial data\"" ;
     owl:versionInfo "1.0"^^xsd:string ;
     skos:hasTopConcept 
