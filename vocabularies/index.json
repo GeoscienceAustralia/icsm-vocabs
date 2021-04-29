@@ -1,4 +1,5 @@
 {
     "address-types.ttl": "https://linked.data.gov.au/def/gnaf/code/AddressTypes",
-    "fsdf-themes.ttl": "https://linked.data.gov.au/def/fsdf-themes"
+    "fsdf-themes.ttl": "https://linked.data.gov.au/def/fsdf-themes",
+    "placenames-categories.ttl": "https://linked.data.gov.au/def/placenames-categories"
 }
