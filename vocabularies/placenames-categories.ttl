@@ -1,0 +1,1863 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pn: <https://linked.data.gov.au/def/placenames/PlaceType> .
+@prefix pnc: <https://linked.data.gov.au/def/placenames-categories/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://linked.data.gov.au/def/placenames-categories> a skos:ConceptScheme ;
+    skos:prefLabel "Place Names Categories"@en ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:created "2015-01-01"^^xsd:date ;
+    dcterms:modified "2021-04-29"^^xsd:date ;
+    dcterms:provenance "This vocabulary was generated from the Place Names database" ;
+    skos:definition "A 3-level hierarchy of Place Name categories"@en ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:hasTopConcept pnc:ADMINISTRATION,
+        pnc:CULTURE,
+        pnc:GROUP,
+        pnc:HYDROLOGY,
+        pnc:LANDCOVER,
+        pnc:MINING,
+        pnc:SOCIETY,
+        pnc:TERRAIN,
+        pnc:TRANSPORT,
+        pnc:UNCLASSIFIED,
+        pnc:UTILITIES ;
+.
+
+pnc:AGED-CARE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CARE ;
+    skos:definition "Aged Care"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Aged Care"@en .
+
+pnc:AGRICULTURAL-AREA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Agricultural Area"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Agricultural Area"@en .
+
+pnc:AIRPORT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AIR ;
+    skos:definition "Airport"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Airport"@en .
+
+pnc:ANCHORAGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Anchorage"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Anchorage"@en .
+
+pnc:ART-GALLERY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Art Gallery"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Art Gallery"@en .
+
+pnc:BANK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Bank"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bank"@en .
+
+pnc:BAR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Bar"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bar"@en .
+
+pnc:BATTERY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROCESSING ;
+    skos:definition "Battery"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Battery"@en .
+
+pnc:BAY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Bay"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bay"@en .
+
+pnc:BEACH a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Beach"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Beach"@en .
+
+pnc:BEACON a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Beacon"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Beacon"@en .
+
+pnc:BEND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Bend"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bend"@en .
+
+pnc:BICYCLE-TRACK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRAIL ;
+    skos:definition "Bicycle Track"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bicycle Track"@en .
+
+pnc:BORE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-POINT ;
+    skos:definition "Bore"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bore"@en .
+
+pnc:BOTANIC-GARDENS a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Botanic Gardens"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Botanic Gardens"@en .
+
+pnc:BREAKWATER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Breakwater"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Breakwater"@en .
+
+pnc:BUSH-NURSING-HOSPITAL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HEALTH ;
+    skos:definition "Bush Nursing Hospital"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Bush Nursing Hospital"@en .
+
+pnc:CAMP-GROUND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ACCOMMODATION ;
+    skos:definition "Camp Ground"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Camp Ground"@en .
+
+pnc:CAPE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Cape"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Cape"@en .
+
+pnc:CAR-PARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Car Park"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Car Park"@en .
+
+pnc:CARAVAN-PARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ACCOMMODATION ;
+    skos:definition "Caravan Park"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Caravan Park"@en .
+
+pnc:CAUSEWAY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Causeway"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Causeway"@en .
+
+pnc:CAVE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Cave"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Cave"@en .
+
+pnc:CEMETERY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Cemetery"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Cemetery"@en .
+
+pnc:CHANNEL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Channel"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Channel"@en .
+
+pnc:CHILD-CARE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CARE ;
+    skos:definition "Child Care"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Child Care"@en .
+
+pnc:CLIFF a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Cliff"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Cliff"@en .
+
+pnc:COAL-POWER-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ENERGY ;
+    skos:definition "Coal Power Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Coal Power Station"@en .
+
+pnc:COAST a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Coast"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Coast"@en .
+
+pnc:COMMUNICATION-TOWER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNICATION ;
+    skos:definition "Communication Tower"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Communication Tower"@en .
+
+pnc:COMMUNITY-CENTRE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Community Centre"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Community Centre"@en .
+
+pnc:COMMUNITY-HEALTH-CENTRE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HEALTH ;
+    skos:definition "Community Health Centre"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Community Health Centre"@en .
+
+pnc:CONSERVATION-PARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROTECTED-AREA ;
+    skos:definition "Conservation Park"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Conservation Park"@en .
+
+pnc:CONTROL-TOWER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Control Tower"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Control Tower"@en .
+
+pnc:CORNER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Corner"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Corner"@en .
+
+pnc:COUNTY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "County"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "County"@en .
+
+pnc:DAM a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Dam"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Dam"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/DEEP-(MARINE)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UNDERSEA ;
+    skos:definition "Deep (Marine)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Deep (Marine)"@en .
+
+pnc:DEPRESSION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Depression"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Depression"@en .
+
+pnc:DESERT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Desert"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Desert"@en .
+
+pnc:DRAIN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Drain"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Drain"@en .
+
+pnc:DUNE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Dune"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Dune"@en .
+
+pnc:ENTRANCE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Entrance"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Entrance"@en .
+
+pnc:EQUESTRIAN-CENTRE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Equestrian Centre"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Equestrian Centre"@en .
+
+pnc:ESTUARY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Estuary"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Estuary"@en .
+
+pnc:FARM a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AGRICULTURE ;
+    skos:definition "Farm"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Farm"@en .
+
+pnc:FEATURE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CATEGORY ;
+    skos:definition "Feature"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Feature"@en .
+
+pnc:FERRY-ROUTE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Ferry Route"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Ferry Route"@en .
+
+pnc:FERRY-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Ferry Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Ferry Station"@en .
+
+pnc:FIRE-LOOKOUT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EMERGENCY ;
+    skos:definition "Fire Lookout"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Fire Lookout"@en .
+
+pnc:FIRE-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EMERGENCY ;
+    skos:definition "Fire Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Fire Station"@en .
+
+pnc:FIREBREAK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRAIL ;
+    skos:definition "Firebreak"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Firebreak"@en .
+
+pnc:FIRING-RANGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Firing Range"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Firing Range"@en .
+
+pnc:FOOTBRIDGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRAIL ;
+    skos:definition "Footbridge"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Footbridge"@en .
+
+pnc:FORD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Ford"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Ford"@en .
+
+pnc:FOREST a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:VEGETATION ;
+    skos:definition "Forest"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Forest"@en .
+
+pnc:FURTHER-EDUCATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Further Education"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Further Education"@en .
+
+pnc:GATE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Gate"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Gate"@en .
+
+pnc:GENERAL-HOSPITAL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HEALTH ;
+    skos:definition "General Hospital"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "General Hospital"@en .
+
+pnc:GOLD-FIELD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:MINERAL-FIELD ;
+    skos:definition "Gold Field"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Gold Field"@en .
+
+pnc:GOLF-COURSE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Golf Course"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Golf Course"@en .
+
+pnc:GORGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Gorge"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Gorge"@en .
+
+pnc:HALL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Hall"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hall"@en .
+
+pnc:HARBOUR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Harbour"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Harbour"@en .
+
+pnc:HILL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Hill"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hill"@en .
+
+pnc:HISTORIC-SITE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Historic Site"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Historic Site"@en .
+
+pnc:HOMESTEAD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Homestead"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Homestead"@en .
+
+pnc:HUNDRED a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Hundred"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hundred"@en .
+
+pnc:HUT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Hut"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hut"@en .
+
+pnc:HYDRO-POWER-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ENERGY ;
+    skos:definition "Hydro Power Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hydro Power Station"@en .
+
+pnc:INLET a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Inlet"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Inlet"@en .
+
+pnc:IRON-ORE-PROCESSOR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROCESSING ;
+    skos:definition "Iron Ore Processor"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Iron Ore Processor"@en .
+
+pnc:ISLAND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Island"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Island"@en .
+
+pnc:ISTHMUS a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Isthmus"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Isthmus"@en .
+
+pnc:JETTY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Jetty"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Jetty"@en .
+
+pnc:JUNCTION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Junction"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Junction"@en .
+
+pnc:KINDERGARTEN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Kindergarten"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Kindergarten"@en .
+
+pnc:LAGOON a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Lagoon"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Lagoon"@en .
+
+pnc:LAKE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Lake"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Lake"@en .
+
+pnc:LANDING-AREA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AIR ;
+    skos:definition "Landing Area"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Landing Area"@en .
+
+pnc:LANDING-PLACE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Landing Place"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Landing Place"@en .
+
+pnc:LAW-COURT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LEGAL ;
+    skos:definition "Law Court"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Law Court"@en .
+
+pnc:LIBRARY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Library"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Library"@en .
+
+pnc:LIGHTHOUSE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Lighthouse"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Lighthouse"@en .
+
+pnc:LOCAL-GOVERNMENT-AREA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Local Government Area"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Local Government Area"@en .
+
+pnc:LOCALITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Locality"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Locality"@en .
+
+pnc:LOCK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Lock"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Lock"@en .
+
+pnc:LOOKOUT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Lookout"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Lookout"@en .
+
+pnc:MARINA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Marina"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Marina"@en .
+
+pnc:MATERNAL-AND-CHILD-HEALTH-CENTRE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HEALTH ;
+    skos:definition "Maternal And Child Health Centre"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Maternal And Child Health Centre"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/MILL/TIMBER-OPERATIONS> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:INDUSTRY ;
+    skos:definition "Mill/Timber Operations"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mill/Timber Operations"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/MINE-(OPEN-CUT)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EXTRACTION ;
+    skos:definition "Mine (Open Cut)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mine (Open Cut)"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/MINE-(UNDERGROUND)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EXTRACTION ;
+    skos:definition "Mine (Underground)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mine (Underground)"@en .
+
+pnc:MISSION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PLACE-OF-WORSHIP ;
+    skos:definition "Mission"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mission"@en .
+
+pnc:MONUMENT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Monument"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Monument"@en .
+
+pnc:MOTOR-TRACK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:BUSINESS ;
+    skos:definition "Motor Track"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Motor Track"@en .
+
+pnc:MOUNTAIN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Mountain"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mountain"@en .
+
+pnc:MULTIUSE-TRAIL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRAIL ;
+    skos:definition "Multiuse Trail"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Multiuse Trail"@en .
+
+pnc:NATIONAL-PARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROTECTED-AREA ;
+    skos:definition "National Park"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "National Park"@en .
+
+pnc:NEIGHBOURHOOD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:POPULATED-PLACE ;
+    skos:definition "Neighbourhood"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Neighbourhood"@en .
+
+pnc:NEIGHBOURHOOD-SAFER-PLACE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EMERGENCY ;
+    skos:definition "Neighbourhood Safer Place"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Neighbourhood Safer Place"@en .
+
+pnc:OIL-REFINERY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROCESSING ;
+    skos:definition "Oil Refinery"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Oil Refinery"@en .
+
+pnc:OUTSTATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Outstation"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Outstation"@en .
+
+pnc:PAN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Pan"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Pan"@en .
+
+pnc:PARISH a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Parish"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Parish"@en .
+
+pnc:PARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Park"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Park"@en .
+
+pnc:PASS a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Pass"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Pass"@en .
+
+pnc:PASSAGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Passage"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Passage"@en .
+
+pnc:PEAK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Peak"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Peak"@en .
+
+pnc:PENINSULA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Peninsula"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Peninsula"@en .
+
+pnc:PIER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Pier"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Pier"@en .
+
+pnc:PLAIN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Plain"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Plain"@en .
+
+pnc:PLANTATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AGRICULTURE ;
+    skos:definition "Plantation"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Plantation"@en .
+
+pnc:PLATEAU a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Plateau"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Plateau"@en .
+
+pnc:PLAYGROUND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Playground"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Playground"@en .
+
+pnc:POINT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Point"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Point"@en .
+
+pnc:POLICE-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EMERGENCY ;
+    skos:definition "Police Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Police Station"@en .
+
+pnc:PORT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Port"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Port"@en .
+
+pnc:POST-OFFICE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:BUSINESS ;
+    skos:definition "Post Office"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Post Office"@en .
+
+pnc:POWER-DISTRIBUTION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ENERGY ;
+    skos:definition "Power Distribution"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Power Distribution"@en .
+
+pnc:PRIMARY-AND-SECONDARY-SCHOOL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Primary And Secondary School"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Primary And Secondary School"@en .
+
+pnc:PRIMARY-SCHOOL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Primary School"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Primary School"@en .
+
+pnc:PRISON a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LEGAL ;
+    skos:definition "Prison"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Prison"@en .
+
+pnc:PUMPING-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Pumping Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Pumping Station"@en .
+
+pnc:QUARRY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EXTRACTION ;
+    skos:definition "Quarry"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Quarry"@en .
+
+pnc:RACECOURSE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:BUSINESS ;
+    skos:definition "Racecourse"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Racecourse"@en .
+
+pnc:RADIO-COMMUNICATION-FACILITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNICATION ;
+    skos:definition "Radio Communication Facility"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Radio Communication Facility"@en .
+
+pnc:RADIO-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNICATION ;
+    skos:definition "Radio Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Radio Station"@en .
+
+pnc:RAIL-STATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RAIL ;
+    skos:definition "Rail Station"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rail Station"@en .
+
+pnc:RAIL-YARD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RAIL ;
+    skos:definition "Rail Yard"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rail Yard"@en .
+
+pnc:RAILWAY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RAIL ;
+    skos:definition "Railway"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Railway"@en .
+
+pnc:RANGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Range"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Range"@en .
+
+pnc:REACH a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Reach"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Reach"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/REEF-(MARINE)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UNDERSEA ;
+    skos:definition "Reef (Marine)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Reef (Marine)"@en .
+
+pnc:RESERVOIR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Reservoir"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Reservoir"@en .
+
+pnc:RIDGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Ridge"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Ridge"@en .
+
+pnc:ROAD-BRIDGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Road Bridge"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Road Bridge"@en .
+
+pnc:ROAD-CUTTING a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Road Cutting"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Road Cutting"@en .
+
+pnc:ROAD-TUNNEL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ROAD ;
+    skos:definition "Road Tunnel"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Road Tunnel"@en .
+
+pnc:ROCK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Rock"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rock"@en .
+
+pnc:ROCKHOLE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Rockhole"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rockhole"@en .
+
+pnc:ROTUNDA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNITY-FACILITY ;
+    skos:definition "Rotunda"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rotunda"@en .
+
+pnc:SCHOOL-CAMP a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "School Camp"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "School Camp"@en .
+
+pnc:SCRUB a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:VEGETATION ;
+    skos:definition "Scrub"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Scrub"@en .
+
+pnc:SEA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Sea"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sea"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/SEA-CHANNEL-(MARINE)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UNDERSEA ;
+    skos:definition "Sea Channel (Marine)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sea Channel (Marine)"@en .
+
+pnc:SECONDARY-SCHOOL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Secondary School"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Secondary School"@en .
+
+pnc:SES-FACILITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EMERGENCY ;
+    skos:definition "Ses Facility"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Ses Facility"@en .
+
+pnc:SEWAGE-TREATMENT-PLANT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WASTE ;
+    skos:definition "Sewage Treatment Plant"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sewage Treatment Plant"@en .
+
+<https://linked.data.gov.au/def/placenames-categories/SHOAL-(MARINE)> a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UNDERSEA ;
+    skos:definition "Shoal (Marine)"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Shoal (Marine)"@en .
+
+pnc:SHOPPING-CENTRE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:BUSINESS ;
+    skos:definition "Shopping Centre"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Shopping Centre"@en .
+
+pnc:SIDING a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RAIL ;
+    skos:definition "Siding"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Siding"@en .
+
+pnc:SLOPE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Slope"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Slope"@en .
+
+pnc:SMELTER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROCESSING ;
+    skos:definition "Smelter"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Smelter"@en .
+
+pnc:SOAK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-POINT ;
+    skos:definition "Soak"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Soak"@en .
+
+pnc:SPECIAL-SCHOOL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Special School"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Special School"@en .
+
+pnc:SPORT-FACILITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Sport Facility"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sport Facility"@en .
+
+pnc:SPORTS-COMPLEX a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Sports Complex"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sports Complex"@en .
+
+pnc:SPORTSGROUND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Sportsground"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Sportsground"@en .
+
+pnc:SPRING a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-POINT ;
+    skos:definition "Spring"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Spring"@en .
+
+pnc:STATE-BORDER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "State Border"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "State Border"@en .
+
+pnc:STATE-FOREST a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:PROTECTED-AREA ;
+    skos:definition "State Forest"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "State Forest"@en .
+
+pnc:STOCKYARD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AGRICULTURE ;
+    skos:definition "Stockyard"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Stockyard"@en .
+
+pnc:SURVEY-MARKER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDMARK ;
+    skos:definition "Survey Marker"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Survey Marker"@en .
+
+pnc:SWIMMING-POOL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Swimming Pool"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Swimming Pool"@en .
+
+pnc:TELEPHONE-EXCHANGE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNICATION ;
+    skos:definition "Telephone Exchange"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Telephone Exchange"@en .
+
+pnc:TELEVISION-COMMUNICATION-FACILITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:COMMUNICATION ;
+    skos:definition "Television Communication Facility"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Television Communication Facility"@en .
+
+pnc:TENNIS-COURT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:RECREATION ;
+    skos:definition "Tennis Court"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Tennis Court"@en .
+
+pnc:TERTIARY-INSTITUTION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "Tertiary Institution"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Tertiary Institution"@en .
+
+pnc:TOWN-SITE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATIVE-AREA ;
+    skos:definition "Town Site"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Town Site"@en .
+
+pnc:UNIVERSITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:EDUCATION ;
+    skos:definition "University"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "University"@en .
+
+pnc:VALLEY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDFORM ;
+    skos:definition "Valley"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Valley"@en .
+
+pnc:VINEYARD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:AGRICULTURE ;
+    skos:definition "Vineyard"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Vineyard"@en .
+
+pnc:WALKING-TRACK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRAIL ;
+    skos:definition "Walking Track"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Walking Track"@en .
+
+pnc:WATER-PIPELINE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Water Pipeline"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Water Pipeline"@en .
+
+pnc:WATER-TANK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-POINT ;
+    skos:definition "Water Tank"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Water Tank"@en .
+
+pnc:WATERCOURSE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Watercourse"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Watercourse"@en .
+
+pnc:WATERFALL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERWAY ;
+    skos:definition "Waterfall"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Waterfall"@en .
+
+pnc:WATERHOLE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-POINT ;
+    skos:definition "Waterhole"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Waterhole"@en .
+
+pnc:WEIR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER-INFRASTRUCTURE ;
+    skos:definition "Weir"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Weir"@en .
+
+pnc:WETLAND a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATERBODY ;
+    skos:definition "Wetland"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Wetland"@en .
+
+pnc:WHARF a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:WATER ;
+    skos:definition "Wharf"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Wharf"@en .
+
+pnc:WINERY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:INDUSTRY ;
+    skos:definition "Winery"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Winery"@en .
+
+pnc:CATEGORY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:GROUP ;
+    skos:definition "Category"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Category"@en .
+
+pnc:MINERAL-FIELD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:MINING ;
+    skos:definition "Mineral Field"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mineral Field"@en .
+
+pnc:PLACE-OF-WORSHIP a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Place Of Worship"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Place Of Worship"@en .
+
+pnc:POPULATED-PLACE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATION ;
+    skos:definition "Populated Place"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Populated Place"@en .
+
+pnc:WASTE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UTILITIES ;
+    skos:definition "Waste"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Waste"@en .
+
+pnc:ACCOMMODATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Accommodation"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Accommodation"@en .
+
+pnc:AIR a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRANSPORT ;
+    skos:definition "Air"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Air"@en .
+
+pnc:CARE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:SOCIETY ;
+    skos:definition "Care"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Care"@en .
+
+pnc:GROUP a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Group"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Group"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:INDUSTRY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Industry"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Industry"@en .
+
+pnc:LANDCOVER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Landcover"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Landcover"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:LEGAL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:SOCIETY ;
+    skos:definition "Legal"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Legal"@en .
+
+pnc:UNCLASSIFIED a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UNCLASSIFIED ;
+    skos:definition "Unclassified"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Unclassified"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:VEGETATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:LANDCOVER ;
+    skos:definition "Vegetation"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Vegetation"@en .
+
+pnc:ENERGY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UTILITIES ;
+    skos:definition "Energy"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Energy"@en .
+
+pnc:EXTRACTION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:MINING ;
+    skos:definition "Extraction"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Extraction"@en .
+
+pnc:PROTECTED-AREA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATION ;
+    skos:definition "Protected Area"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Protected Area"@en .
+
+pnc:TERRAIN a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Terrain"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Terrain"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:ADMINISTRATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Administration"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Administration"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:AGRICULTURE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Agriculture"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Agriculture"@en .
+
+pnc:BUSINESS a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Business"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Business"@en .
+
+pnc:HEALTH a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:SOCIETY ;
+    skos:definition "Health"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Health"@en .
+
+pnc:MINING a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Mining"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Mining"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:PROCESSING a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:MINING ;
+    skos:definition "Processing"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Processing"@en .
+
+pnc:RAIL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRANSPORT ;
+    skos:definition "Rail"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Rail"@en .
+
+pnc:UNDERSEA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TERRAIN ;
+    skos:definition "Undersea"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Undersea"@en .
+
+pnc:UTILITIES a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Utilities"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Utilities"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:COMMUNICATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:UTILITIES ;
+    skos:definition "Communication"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Communication"@en .
+
+pnc:EMERGENCY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:SOCIETY ;
+    skos:definition "Emergency"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Emergency"@en .
+
+pnc:HYDROLOGY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Hydrology"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Hydrology"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:TRAIL a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRANSPORT ;
+    skos:definition "Trail"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Trail"@en .
+
+pnc:WATER-POINT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HYDROLOGY ;
+    skos:definition "Water Point"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Water Point"@en .
+
+pnc:SOCIETY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Society"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Society"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:TRANSPORT a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Transport"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Transport"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:ROAD a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRANSPORT ;
+    skos:definition "Road"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Road"@en .
+
+pnc:WATERWAY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HYDROLOGY ;
+    skos:definition "Waterway"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Waterway"@en .
+
+pnc:ADMINISTRATIVE-AREA a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:ADMINISTRATION ;
+    skos:definition "Administrative Area"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Administrative Area"@en .
+
+pnc:COMMUNITY-FACILITY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Community Facility"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Community Facility"@en .
+
+pnc:WATER-INFRASTRUCTURE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HYDROLOGY ;
+    skos:definition "Water Infrastructure"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Water Infrastructure"@en .
+
+pnc:CULTURE a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:definition "Culture"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Culture"@en ;
+    skos:topConceptOf <https://linked.data.gov.au/def/placenames-categories> .
+
+pnc:EDUCATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:SOCIETY ;
+    skos:definition "Education"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Education"@en .
+
+pnc:LANDMARK a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Landmark"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Landmark"@en .
+
+pnc:RECREATION a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:CULTURE ;
+    skos:definition "Recreation"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Recreation"@en .
+
+pnc:WATER a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TRANSPORT ;
+    skos:definition "Water"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Water"@en .
+
+pnc:WATERBODY a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:HYDROLOGY ;
+    skos:definition "Waterbody"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Waterbody"@en .
+
+pnc:LANDFORM a skos:Concept,
+        pn:PlaceType ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:broader pnc:TERRAIN ;
+    skos:definition "Landform"@en ;
+    skos:inScheme <https://linked.data.gov.au/def/placenames-categories> ;
+    skos:prefLabel "Landform"@en .
