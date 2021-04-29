@@ -20,12 +20,16 @@ cs:
     owl:versionInfo "1.0"^^xsd:string ;
     skos:hasTopConcept 
         :administrative-boundaries , 
+        :buildings-and-settlements ,
         :elevation-and-depth , 
         :geocoded-addressing ,
+        :geology-and-soils ,
         :imagery ,
         :land-cover-and-land-use ,
-        :land-property-and-parcel ,
+        :land-parcel-and-property ,
+        :physical-infrastructure ,
         :place-names ,
+        :population-distributions ,
         :positioning ,
         :transport ,
         :water ;
@@ -130,6 +134,16 @@ Together with other information, maps are also used to notify interested parties
     skos:broader :administrative-boundaries ;
 .
 
+:buildings-and-settlements
+    a skos:Concept ;
+    skos:prefLabel "Buildings and Settlements"@en ;
+    skos:definition "A building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
+.
+
 :elevation-and-depth
     a skos:Concept ;
     skos:prefLabel "Elevation and Depth"@en ;
@@ -159,7 +173,7 @@ Such measurements can be made using:
 :geocoded-addressing
     a skos:Concept ;
     skos:prefLabel "Geocoded Addressing"@en ;
-    skos:definition "The Geocoded Addressing theme focusses on the connection between a physical address with location information which shows up as a 'place' or 'spot' on the Earth. This makes the information able to be mapped and connected to other location information. An address is a structured label usually containing a property number, a road name and a locality name. "@en ;
+    skos:definition "The Geocoded Addressing theme focusses on the connection between a physical address with location information which shows up as a 'place' or 'spot' on the Earth. This makes the information able to be mapped and connected to other location information. An address is a structured label usually containing a property number, a road name and a locality name."@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
@@ -174,15 +188,24 @@ Such measurements can be made using:
     skos:broader :geocoded-addressing ;
 .
 
+:geology-and-soils
+    a skos:Concept ;
+    skos:prefLabel "Geology and Soils"@en ;
+    skos:definition "Geology is the composition and properties of geologic materials (rocks and sediments) underground and outcropping at the Earth’s surface. It includes bedrock, aquifers, geomorphology for land and marine environments, mineral resources and overlying soils. Soils are the upper part of the Earth’s crust, formed by mineral particles, organic matter, water, air, and living organisms."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
+.
+
 :imagery
     a skos:Concept ;
     skos:prefLabel "Imagery"@en ;
-    skos:definition "The Imagery theme focuses on foundation data which captures images of the Earths surface, from many different sensors and cameras. This data is often the base layer over which many other datasets are used. "@en ;
+    skos:definition "The Imagery theme focuses on foundation data which captures images of the Earths surface, from many different sensors and cameras. This data is often the base layer over which many other datasets are used."@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
 .
-
 
 :low-resolution-high-temporal-coverage
     a skos:Concept ;
@@ -236,7 +259,7 @@ There are an increasing number of these sensors available for both satellite and
 :land-cover-and-land-use
     a skos:Concept ;
     skos:prefLabel "Land Cover and Land Use"@en ;
-    skos:definition "The Land cover and Land Use theme focusses on foundation datasets for Land Cover and Land Use. Both land cover/use are often very interrelated datasets. Land cover shows the natural cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks and water bodies; as well as human elements such as plantations, crops and built environments; Land Use refers to the ways in which land cover is used by humans (e.g. residential, industrial, commercial, agricultural, forestry, recreational). "@en ;
+    skos:definition "The Land cover and Land Use theme focusses on foundation datasets for Land Cover and Land Use. Both land cover/use are often very interrelated datasets. Land cover shows the natural cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks and water bodies; as well as human elements such as plantations, crops and built environments; Land Use refers to the ways in which land cover is used by humans (e.g. residential, industrial, commercial, agricultural, forestry, recreational)."@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
@@ -315,9 +338,9 @@ The NFI classifies forests into three national forest categories (Native forest,
     skos:broader :land-cover-and-land-use ;
 .
 
-:land-property-and-parcel
+:land-parcel-and-property
     a skos:Concept ;
-    skos:prefLabel "Land Property and Parcel"@en ;
+    skos:prefLabel "Land Parcel and Property"@en ;
     skos:definition "The Land Parcel and Property theme focusses on foundation datasets for the land boundary system. The term Land Parcel and Property can be interchangeable with cadastral, land administration and property systems. Land Parcel and Property contains a record of interest in land."@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
@@ -330,7 +353,7 @@ The NFI classifies forests into three national forest categories (Native forest,
     skos:definition """The Land Parcel dataset is a data aggregation sourced from the jurisdictions which depicts national and accurate land and strata based information including parcels representing easements, roads, crossing, rail and water."""@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
-    skos:broader :land-property-and-parcel ;
+    skos:broader :land-parcel-and-property ;
 .
 
 :land-tenure
@@ -339,7 +362,17 @@ The NFI classifies forests into three national forest categories (Native forest,
     skos:definition """Aligns land tenure classifications to cadastral parcel identifiers, requiring the use of the CadLite® dataset to visualise or spatially analyse the Land Tenure dataset."""@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
-    skos:broader :land-property-and-parcel ;
+    skos:broader :land-parcel-and-property ;
+.
+
+:physical-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Physical Infrastructure"@en ;
+    skos:definition "The Physical Infrastructure theme includes industrial & utility facilities, and the service delivery facilities associated with administrative & social governmental services such as public administrations, utilities, transport, civil protection, schools and hospitals."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 :place-names
@@ -360,6 +393,16 @@ These names can include approved, unapproved, commonly used, alternate and histo
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
     skos:broader :place-names ;
+.
+
+:population-distributions
+    a skos:Concept ;
+    skos:prefLabel "Population Distributions"@en ;
+    skos:definition "The Population Distribution theme covers the geographical distribution of people, including population characteristics."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 :positioning
@@ -385,7 +428,7 @@ Expanding the CORSnet network of global navigation satellite systems (GNSS) cont
 :transport
     a skos:Concept ;
     skos:prefLabel "Transport"@en ;
-    skos:definition "The Transport theme focuses on foundation datasets for moving people, goods and freight, and other services from one location to another. "@en ;
+    skos:definition "The Transport theme focuses on foundation datasets for moving people, goods and freight, and other services from one location to another."@en ;
     rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
