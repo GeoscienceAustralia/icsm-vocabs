@@ -5,7 +5,8 @@ import httpx
 
 def main():
     # get the validator
-    r = httpx.get("https://w3id.org/profile/vocpub/validator")
+    # r = httpx.get("https://w3id.org/profile/vocpub/validator") # expired SSL cert
+    r = httpx.get("https://raw.githack.com/surroundaustralia/vocpub-profile/master/validator.shacl.ttl") # temporary link
     assert r.status_code == 200
 
     # for all vocabs...
