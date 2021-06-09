@@ -18,7 +18,13 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-        # add_to_vocab_index(vocab, get_graph_uri_for_vocab(vocab))
+
+        r2 = httpx.post(
+            "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
+            data={"update": "ADD <{}> TO DEFAULT".format(mappings[vocab.name])},
+            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+        )
+        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r.status_code)
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
@@ -29,7 +35,22 @@ def remove_vocabs(vocabs: List[Path], mappings: dict):
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-        # remove_from_vocab_index(vocab)
+
+    # clear default graph
+    r = httpx.post(
+        "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
+        data={"update": "DROP DEFAULT"},
+        auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+    )
+
+    # re-add all remaining vocabs back into default graph
+    for f in Path(__file__).parent.parent.glob("vocabularies/*.ttl"):
+        r2 = httpx.post(
+            "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
+            data={"update": "ADD <{}> TO DEFAULT".format(mappings[f])},
+            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+        )
+        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r.status_code)
 
 
 def get_graph_uri_for_vocab(vocab: Path) -> URIRef:
