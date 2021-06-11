@@ -2,6 +2,5 @@
     "address-types.ttl": "https://linked.data.gov.au/def/gnaf/code/AddressTypes",
     "fsdf-themes.ttl": "https://linked.data.gov.au/def/fsdf-themes",
     "themes-physical-infrastructure.ttl": "https://linked.data.gov.au/def/fsdf/themes/physical-infrastructure-cs",
-    "placenames-categories.ttl": "https://linked.data.gov.au/def/placenames-categories",
-    "petroleum-tenement-type.ttl": "http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-type"
+    "placenames-categories.ttl": "https://linked.data.gov.au/def/placenames-categories"
 }
