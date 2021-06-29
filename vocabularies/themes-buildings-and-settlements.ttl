@@ -1,0 +1,92 @@
+# baseURI: https://linked.data.gov.au/def/fsdf/themes/buildings-and-settlements-cs
+
+@prefix cs: <https://linked.data.gov.au/def/fsdf/themes/buildings-and-settlements-cs> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix themes: <https://linked.data.gov.au/def/fsdf/themes/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cs: 
+    a owl:Ontology , skos:ConceptScheme ;
+    skos:prefLabel "FSDF Themes - Buildings & Settlements" ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:created "2021-06-11"^^xsd:date ;
+    dcterms:modified "2021-06-29"^^xsd:date ;
+    dcterms:provenance "Created for the Loc-I DR Project" ;
+    skos:definition "Subcategories within the FSDF Themes' Vocabulary's _Buildings and Settlements_ category."@en ;
+    skos:note "This vocabulary is an extension to the FSDF Themes vocabulary" ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:hasTopConcept themes:buildings-and-settlements ;
+.
+
+
+themes:buildings-and-settlements
+    a skos:Concept ;
+    skos:prefLabel "Buildings and Settlements"@en ;
+    skos:definition "A building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities."@en ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
+.
+
+themes:educational-facility
+    a skos:Concept ;
+    skos:prefLabel "Educational Facility"@en ;
+    skos:definition "A facility used for education"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:buildings-and-settlements ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:health-facility
+    a skos:Concept ;
+    skos:prefLabel "Health Facility"@en ;
+    skos:definition "A facility used for public health, such as a hospital"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:buildings-and-settlements ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:hopsital
+    a skos:Concept ;
+    skos:prefLabel "Hopsital"@en ;
+    skos:definition "Any hospital facility"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:general-practice
+    a skos:Concept ;
+    skos:prefLabel "General Practice"@en ;
+    skos:definition "Any General Practice facility"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+
+themes:emergency-management-facility
+    a skos:Concept ;
+    skos:prefLabel "Emergency Management Facility"@en ;
+    skos:definition "A facility used for emerency management"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:buildings-and-settlements ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
