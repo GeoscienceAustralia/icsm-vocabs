@@ -1,0 +1,212 @@
+# baseURI: https://linked.data.gov.au/def/fsdf/themes/physical-infrastructure-cs
+
+@prefix cs: <https://linked.data.gov.au/def/fsdf/themes/physical-infrastructure-cs> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix themes: <https://linked.data.gov.au/def/fsdf/themes/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cs: 
+    a owl:Ontology , skos:ConceptScheme ;
+    skos:prefLabel "FSDF Themes - Physcial Infrastructure" ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:created "2021-05-13"^^xsd:date ;
+    dcterms:modified "2021-06-29"^^xsd:date ;
+    dcterms:provenance "Created for the Loc-I DR Project" ;
+    skos:definition "Subcategories within the FSDF Themes' Vocabulary's _Physical Infrastructure_ category."@en ;
+    skos:note "This vocabulary is an extension to the FSDF Themes vocabulary" ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:hasTopConcept themes:physical-infrastructure ;
+.
+
+
+themes:physical-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Physical Infrastructure"@en ;
+    skos:definition "The Physical Infrastructure theme includes industrial & utility facilities, and the service delivery facilities associated with administrative & social governmental services such as public administrations, utilities, transport, civil protection, schools and hospitals."@en ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
+.
+
+themes:electrical-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Electrical Infrastructure"@en ;
+    skos:definition "The Physical Infrastructure used in the generation, distribution and use of electricity"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:pipelines
+    a skos:Concept ;
+    skos:prefLabel "Pipelines"@en ;
+    skos:definition "All kinds of pipelines"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:waste-management
+    a skos:Concept ;
+    skos:prefLabel "Waste Management"@en ;
+    skos:definition "All kinds of waste management infrastructure"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:wastewater-treatment
+    a skos:Concept ;
+    skos:prefLabel "Wastewater Treatment"@en ;
+    skos:definition "All kinds of wastewater treatment infrastructure"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:generation-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Generation Infrastructure"@en ;
+    skos:definition "The Electrical Infrastructure used in the generation electricity"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:electrical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:transmission-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Transmission Infrastructure"@en ;
+    skos:definition "The Electrical Infrastructure used in the transmission of electricity"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:electrical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:power-line
+    a skos:Concept ;
+    skos:prefLabel "Power Line"@en ;
+    skos:altLabel "Transmission Line"@en ;
+    skos:definition "Transmission Infrastructure used in power transmission or distribution"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:transmission-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:high-voltage-power-line
+    a skos:Concept ;
+    skos:prefLabel "High Voltage Power Line"@en ;
+    skos:definition "A network of wires and insulators used to connect and transport high voltage electricity"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:power-line ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:high-voltage-power-line-overhead
+    a skos:Concept ;
+    skos:prefLabel "Overhead High Voltage Power Line"@en ;
+    skos:definition "High Voltage Power Lines that are overhead (above ground)"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:high-voltage-power-line ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:high-voltage-power-line-underground
+    a skos:Concept ;
+    skos:prefLabel "Underground High Voltage Power Line"@en ;
+    skos:definition "High Voltage Power Lines that are underground"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:high-voltage-power-line ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+
+themes:low-voltage-power-line
+    a skos:Concept ;
+    skos:prefLabel "Low Voltage Power Line"@en ;
+    skos:definition "A network of wires and insulators used to connect and transport low voltage electricity"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:power-line ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+
+themes:low-voltage-power-line-overhead
+    a skos:Concept ;
+    skos:prefLabel "Overhead Low Voltage Power Line"@en ;
+    skos:definition "Low Voltage Power Lines that are overhead (above ground)"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:low-voltage-power-line ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:substation-infrastructure
+    a skos:Concept ;
+    skos:prefLabel "Substation Infrastructure"@en ;
+    skos:definition "The Electrical Infrastructure used for voltage transformation or electrical power conversions"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:electrical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:renewable
+    a skos:Concept ;
+    skos:prefLabel "Renewable"@en ;
+    skos:definition "A renewable energy source"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+#
+# Power Station Type
+#
+themes:solar
+    a skos:Concept ;
+    skos:prefLabel "Renewable"@en ;
+    skos:definition "A renewable energy source"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:solarPhotovoltaic
+    a skos:Concept ;
+    skos:prefLabel "Renewable"@en ;
+    skos:definition "A renewable energy source"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+themes:standardPV
+    a skos:Concept ;
+    skos:prefLabel "Renewable"@en ;
+    skos:definition "A renewable energy source"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:physical-infrastructure ;
+    skos:inScheme cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+

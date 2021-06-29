@@ -1,0 +1,44 @@
+# baseURI: https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs
+# prefix: themes
+
+@prefix cs: <https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix themes: <https://linked.data.gov.au/def/fsdf/themes/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cs: 
+    a owl:Ontology , skos:ConceptScheme ;
+    skos:prefLabel "FSDF Themes - Surface Hydrology" ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:created "2021-05-29"^^xsd:date ;
+    dcterms:modified "2021-06-29"^^xsd:date ;
+    dcterms:provenance "Created for the Loc-I DR Project" ;
+    skos:definition "Subcategories within the FSDF Themes' Vocabulary's _Surface Hydrology_ category."@en ;
+    skos:note "This vocabulary is an extension to the FSDF Themes vocabulary"@en ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:hasTopConcept themes:surface-hydrology ;
+.
+
+themes:surface-hydrology
+    a skos:Concept ;
+    skos:prefLabel "Surface Hydrology"@en ;
+    skos:definition """The Surface Hydrology dataset provides a set of related feature classes to be used as the basis of the production of consistent hydrological information. This dataset contains a geometric representation of the (major) surface water features of Australia. Primarily, these are natural surface hydrology features, but the dataset also contains some artificial features (notably reservoirs, canals and other hydrographic features)."""@en ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
+    skos:inScheme cs: ;
+.
+
+themes:floods
+    a skos:Concept ;
+    skos:prefLabel "Floods"@en ;
+    skos:definition "Floods, flooding, including freshwater and coastal"@en ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
+    skos:inScheme cs: ;
+    skos:broader <https://linked.data.gov.au/def/fsdf/themes/surface-hydrology> ;
+.
+
