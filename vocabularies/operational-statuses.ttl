@@ -1,0 +1,63 @@
+# baseURI: https://linked.data.gov.au/def/fsdf/operational-statuses
+# prefix: opstatus
+
+@prefix cs: <https://linked.data.gov.au/def/fsdf/operational-statuses> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fsdf: <https://linked.data.gov.au/def/fsdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix opstatus: <https://linked.data.gov.au/def/fsdf/operational-statuses/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cs: 
+    a owl:Ontology , skos:ConceptScheme ;
+    skos:prefLabel "FSDF Operational Statuses" ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:publisher <https://linked.data.gov.au/org/icsm> ;
+    dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:created "2021-05-13"^^xsd:date ;
+    dcterms:modified "2021-05-13"^^xsd:date ;
+    dcterms:provenance "Created for the Loc-I DR Project" ;
+    skos:definition "This vocabulary is used to indicate the status of the operations of FSDF infrastructure assets (Features)"@en ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:hasTopConcept 
+        opstatus:operational ,
+        opstatus:non-operational ,
+        opstatus:decommissioned ;
+.
+
+opstatus:operational
+    a skos:Concept , fsdf:OperationalStatus ;
+    skos:prefLabel "Operational"@en ;
+    skos:definition "The Feature is operating"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+.
+opstatus:non-operational
+    a skos:Concept , fsdf:OperationalStatus ;
+    skos:prefLabel "Non-Operational"@en ;
+    skos:definition "The Feature is not operating"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+.
+opstatus:decommissioned
+    a skos:Concept , fsdf:OperationalStatus ;
+    skos:prefLabel "Decommissioned"@en ;
+    skos:definition "The Feature is decommissioned"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+.
+opstatus:proposed
+    a skos:Concept , fsdf:OperationalStatus ;
+    skos:prefLabel "Proposed"@en ;
+    skos:definition "The Feature is proposed"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+.

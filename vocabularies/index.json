@@ -1,8 +1,12 @@
 {
     "address-types.ttl": "https://linked.data.gov.au/def/gnaf/code/AddressTypes",
+    "ground-relations.ttl": "https://linked.data.gov.au/def/fsdf/ground-relations",
     "fsdf-themes.ttl": "https://linked.data.gov.au/def/fsdf-themes",
+    "observable-properties.ttl": "https://linked.data.gov.au/def/fsdf/observable-properties",
+    "operational-statuses.ttl": "https://linked.data.gov.au/def/fsdf/operational-statuses",
     "placenames-categories.ttl": "https://linked.data.gov.au/def/placenames-categories",
     "themes-buildings-and-settlements.ttl": "https://linked.data.gov.au/def/fsdf/themes/buildings-and-settlements-cs",
     "themes-physical-infrastructure.ttl": "https://linked.data.gov.au/def/fsdf/themes/physical-infrastructure-cs",
-    "themes-surface-hydrology.ttl": "https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs"
+    "themes-surface-hydrology.ttl": "https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs",
+    "themes.ttl": "https://linked.data.gov.au/def/fsdf-themes"
 }
