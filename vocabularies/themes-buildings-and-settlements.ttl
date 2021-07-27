@@ -2,6 +2,7 @@
 
 @prefix cs: <https://linked.data.gov.au/def/fsdf/themes/buildings-and-settlements-cs> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fsdf: <https://linked.data.gov.au/def/fsdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,11 +11,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-cs: 
+cs:
     a owl:Ontology , skos:ConceptScheme ;
     skos:prefLabel "FSDF Themes - Buildings & Settlements" ;
     dcterms:creator <https://linked.data.gov.au/org/ga> ;
     dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:created "2021-06-11"^^xsd:date ;
     dcterms:modified "2021-06-29"^^xsd:date ;
     dcterms:provenance "Created for the Loc-I DR Project" ;
@@ -24,9 +26,8 @@ cs:
     skos:hasTopConcept themes:buildings-and-settlements ;
 .
 
-
 themes:buildings-and-settlements
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Buildings and Settlements"@en ;
     skos:definition "A building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities."@en ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
@@ -36,7 +37,7 @@ themes:buildings-and-settlements
 .
 
 themes:educational-facility
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Educational Facility"@en ;
     skos:definition "A facility used for education"@en ;
     rdfs:isDefinedBy cs: ;
@@ -47,7 +48,7 @@ themes:educational-facility
 .
 
 themes:health-facility
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Health Facility"@en ;
     skos:definition "A facility used for public health, such as a hospital"@en ;
     rdfs:isDefinedBy cs: ;
@@ -58,7 +59,7 @@ themes:health-facility
 .
 
 themes:hopsital
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Hopsital"@en ;
     skos:definition "Any hospital facility"@en ;
     rdfs:isDefinedBy cs: ;
@@ -68,8 +69,30 @@ themes:hopsital
     dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
 .
 
+themes:private-overnight-hopsital
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Private Overnight Hopsital"@en ;
+    skos:definition "A Private Overnight hospital facility"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:hopsital ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:private-same-day-hopsital
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Private Same Day Hopsital"@en ;
+    skos:definition "A Private Same Day hospital facility"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:hopsital ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
 themes:general-practice
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "General Practice"@en ;
     skos:definition "Any General Practice facility"@en ;
     rdfs:isDefinedBy cs: ;
@@ -79,13 +102,265 @@ themes:general-practice
     dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
 .
 
-
 themes:emergency-management-facility
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Emergency Management Facility"@en ;
     skos:definition "A facility used for emerency management"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader themes:buildings-and-settlements ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:primary-school
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Primary School"@en ;
+    skos:definition "An Educational Facility that is a Primary School only"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:primary-and-secondary-school
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Primary and Secondary School"@en ;
+    skos:definition "An Educational Facility that includes a Primary and Secondary School"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:secondary-school
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Secondary School"@en ;
+    skos:definition "An Educational Facility that is a Secondary School"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:tertiary-institution
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Tertiary Institution"@en ;
+    skos:definition "An Educational Facility that is a Tertiary Institution"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:special-needs-school
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Special Needs School"@en ;
+    skos:definition "An Educational Facility that is a Special Needs School"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:high-school
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "High School"@en ;
+    skos:definition "An Educational Facility that is a High School"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:technical-college
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Technical College"@en ;
+    skos:definition "An Educational Facility that is a Technical College"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:community-education-college
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Community Education College"@en ;
+    skos:definition "An Educational Facility that is a Community Education College"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:kindergarten
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Kindergarten"@en ;
+    skos:definition "An Educational Facility that is a Kindergarten"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:preschool
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "PreSchool"@en ;
+    skos:definition "An Educational Facility that is a PreSchool"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:secondary-college
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Secondary College"@en ;
+    skos:definition "An Educational Facility that is a Secondary College"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:childcare-centre
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Childcare Centre"@en ;
+    skos:definition "An Educational Facility that is a Childcare Centre"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:academy
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Academy"@en ;
+    skos:definition "An Educational Facility that is a Academy"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:educational-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:fire-station-metro
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Fire Station Metro"@en ;
+    skos:definition "An Emergency Management Facility that is a Fire Station in a metropolitan area"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:ambulance-station
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Ambulance Station"@en ;
+    skos:definition "An Emergency Management Facility that is a Ambulance Station"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:other-emergency-building
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Other Emergency Building"@en ;
+    skos:definition "An Emergency Management Facility other than those specified in this vocabulary"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:state-emergency-service-depot
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "State Emergency Service Depot"@en ;
+    skos:definition "An Emergency Management Facility that is a State Emergency Service Depot"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:police-station
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Police Station"@en ;
+    skos:definition "An Emergency Management Facility that is a Police Station"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:rfs-station
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "RFS Station"@en ;
+    skos:definition "An Emergency Management Facility that is a RFS Station"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:emergency-management-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:indigenous-health-centre
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Indigenous Health Centre"@en ;
+    skos:definition "An Emergency Management Facility that is an Indigenous Health Centre"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:disability-support-service
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Disability Support Service"@en ;
+    skos:definition "An Emergency Management Facility that is an Disability Support Service"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:aged-care-facility
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Aged Care Facility"@en ;
+    skos:definition "An Emergency Management Facility that is an Aged Care Facility"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
+    skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
+    dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;
+.
+
+themes:nursing-home
+    a skos:Concept , fsdf:Theme ;
+    skos:prefLabel "Nursing Home"@en ;
+    skos:definition "An Emergency Management Facility that is an Nursing Home"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader themes:health-facility ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
     dcterms:provenance "Defined in the Loc-I DR project to classify spatial features" ;

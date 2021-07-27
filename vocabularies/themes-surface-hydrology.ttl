@@ -3,6 +3,7 @@
 
 @prefix cs: <https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fsdf: <https://linked.data.gov.au/def/fsdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -16,6 +17,7 @@ cs:
     skos:prefLabel "FSDF Themes - Surface Hydrology" ;
     dcterms:creator <https://linked.data.gov.au/org/ga> ;
     dcterms:publisher <https://linked.data.gov.au/org/anzlic> ;
+    dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:created "2021-05-29"^^xsd:date ;
     dcterms:modified "2021-06-29"^^xsd:date ;
     dcterms:provenance "Created for the Loc-I DR Project" ;
@@ -26,7 +28,7 @@ cs:
 .
 
 themes:surface-hydrology
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Surface Hydrology"@en ;
     skos:definition """The Surface Hydrology dataset provides a set of related feature classes to be used as the basis of the production of consistent hydrological information. This dataset contains a geometric representation of the (major) surface water features of Australia. Primarily, these are natural surface hydrology features, but the dataset also contains some artificial features (notably reservoirs, canals and other hydrographic features)."""@en ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
@@ -34,11 +36,10 @@ themes:surface-hydrology
 .
 
 themes:floods
-    a skos:Concept ;
+    a skos:Concept , fsdf:Theme ;
     skos:prefLabel "Floods"@en ;
     skos:definition "Floods, flooding, including freshwater and coastal"@en ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/fsdf/themes> ;
+    rdfs:isDefinedBy cs: ;
     skos:inScheme cs: ;
-    skos:broader <https://linked.data.gov.au/def/fsdf/themes/surface-hydrology> ;
+    skos:broader themes:surface-hydrology ;
 .
-
