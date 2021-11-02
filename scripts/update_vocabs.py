@@ -1,51 +1,95 @@
-import json
 from typing import List
+import json
+import os
+import time
 import argparse
 from pathlib import Path
 import httpx
 from rdflib import Graph, URIRef
 from rdflib.namespace import RDF, SKOS
-import os
+
+
+MAX_RETRIES = 3
+
+DB_TYPE = "fuseki"  # options: "fuseki" | "graphdb"
+BASE_DB_URI = "http://fuseki.surroundaustralia.com/icsm-vocabs"
+WEBSITE_URL = "http://icsm.surroundaustralia.com"
+
+DB_USERNAME = os.environ.get("DB_USERNAME", None)
+DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
     # add new vocabs
     for vocab in vocabs:
+        params = {}
+        endpoint = ""
+        if DB_TYPE == "fuseki":
+            params = {"graph": str(mappings[vocab.name])}
+            endpoint = f"{BASE_DB_URI}/data"
+        elif DB_TYPE == "graphdb":
+            params = {"context": f"<{str(mappings[vocab.name])}>"}
+            endpoint = f"{BASE_DB_URI}/statements"
+        else:  # unsupported db type
+            raise ValueError(
+                "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
+            )
+
         r = httpx.post(
-            "http://fuseki.surroundaustralia.com/icsm-vocabs/data",
-            params={"graph": str(mappings[vocab.name])},
+            endpoint,
+            params=params,
             headers={"Content-Type": "text/turtle"},
             content=open(vocab, "rb").read(),
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+            auth=(DB_USERNAME, DB_PASSWORD),
         )
+        if not 200 <= r.status_code <= 300:
+            print(r.content)
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-    
-    # re-add remaining vocabs in directory to default graph
-    for f in Path(__file__).parent.parent.glob("vocabularies/*.ttl"):
-        r2 = httpx.post(
-            "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
-            data={"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))},
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+
+    endpoint = ""
+
+    if DB_TYPE == "fuseki":
+        endpoint = f"{BASE_DB_URI}/update"
+    elif DB_TYPE == "graphdb":
+        endpoint = f"{BASE_DB_URI}/statements"
+    else:  # unsupported db type
+        raise ValueError(
+            "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
         )
+
+    # re-add remaining vocabs in directory to default graph
+    for f in Path(__file__).parent.parent.glob("vocabularies/**/*.ttl"):
+        data = {"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))}
+        r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+        if not 200 <= r2.status_code <= 300:
+            print(r2.content)
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
+    endpoint = ""
+    data = {"update": "DROP DEFAULT"}
+    if DB_TYPE == "fuseki":
+        endpoint = f"{BASE_DB_URI}/update"
+    elif DB_TYPE == "graphdb":
+        endpoint = f"{BASE_DB_URI}/statements"
+    else:  # unsupported db type
+        raise ValueError(
+            "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
+        )
+
     # clear default graph
-    r = httpx.post(
-        "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
-        data={"update": "DROP DEFAULT"},
-        auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
-    )
+    r = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+    if not 200 <= r.status_code <= 300:
+        print(r.content)
     assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-    
+
     # drop deleted graphs
     for vocab in vocabs:
-        r2 = httpx.post(
-            "http://fuseki.surroundaustralia.com/icsm-vocabs/update",
-            data={"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))},
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
-        )
+        data = {"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))}
+        r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+        if not 200 <= r2.status_code <= 300:
+            print(r2.content)
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
@@ -85,11 +129,21 @@ def get_all_vocabs_uris(vocabs: List[Path]) -> dict:
 
 
 if __name__ == "__main__":
-    # for testing (until exit()):
-    # add_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
-    # add_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
-    # remove_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
-    # exit()
+    # for testing, includes index.json as mapping dict
+    # index = json.load(
+    #     open(Path(__file__).parent.parent / "vocabularies" / "index.json", "r")
+    # )
+    # remove_vocabs(
+    #     [
+    #         Path(__file__).parent.parent / "vocabularies" / "earthresourceml" / "ClassificationMethodUsed.ttl",
+    #     ],
+    #     index,
+    # )
+    # add_vocabs(
+    #     [
+    #         Path(__file__).parent.parent / "vocabularies" / "earthresourceml" / "WasteStorage.ttl",
+    #     ], index
+    # )
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -105,9 +159,15 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "-d",
+        "--deleted",
+        help="Vocabs to be deleted from the DB",
+    )
+
+    parser.add_argument(
         "-r",
-        "--removed",
-        help="Vocabs to be removed from the DB",
+        "--renamed",
+        help="Vocabs to be renamed in the DB",
     )
 
     args = parser.parse_args()
@@ -128,21 +188,28 @@ if __name__ == "__main__":
                 added.append(p)
 
     removed = []
-    if args.removed:
-        for f in args.removed.split(","):
+    if args.deleted:
+        for f in args.deleted.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 p = Path(f)
                 removed.append(p)
+    renamed = []
+    if args.renamed:
+        for f in args.renamed.split(","):
+            # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
+            if f.startswith("vocabularies/") and f.endswith(".ttl"):
+                p = Path(f)
+                renamed.append(p)
 
     i = Path(__file__).parent.parent / "vocabularies" / "index.json"
     with open(i, "r") as f:
         mappings = json.load(f)
     # remove all removed and modified vocabs
-    remove_vocabs(removed + modified, mappings)
+    remove_vocabs(removed + modified + renamed, mappings)
 
     # add all added and modified vocabs
-    add_vocabs(added + modified, mappings)
+    add_vocabs(added + modified + renamed, mappings)
 
     # print for testing
     print("modified:")
@@ -151,8 +218,25 @@ if __name__ == "__main__":
     print([str(x) for x in added])
     print("removed:")
     print([str(x) for x in removed])
+    print("renamed:")
+    print([str(x) for x in renamed])
 
-    # rebuild VocPrez' cache
-    r = httpx.get("http://icsm.surroundaustralia.com/cache-reload")
-    assert r.status_code == 200
-
+    # retries if GET request fails
+    retries = 0
+    reason = ""
+    while retries < MAX_RETRIES:
+        try:
+            # rebuild VocPrez' cache
+            r = httpx.get(f"{WEBSITE_URL}/cache-reload")
+            if r.status_code != 200:
+                reason = r.content
+                time.sleep(0 if retries == 0 else 2 ** retries)
+                retries += 1
+                continue
+            break
+        except:
+            assert retries < MAX_RETRIES, "Request failed too many times"
+            time.sleep(0 if retries == 0 else 2 ** retries)
+            retries += 1
+            continue
+    assert r.status_code == 200, f"Error code {r.status_code}: {reason}"
