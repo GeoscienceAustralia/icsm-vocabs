@@ -1860,4 +1860,3 @@ cs: a skos:ConceptScheme ;
         pnc:UNCLASSIFIED,
         pnc:UTILITIES ;
     skos:prefLabel "Place Names Categories"@en .
-
