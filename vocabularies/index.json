@@ -1,8 +1,7 @@
 {
     "address-types.ttl": "https://linked.data.gov.au/def/gnaf/code/AddressTypes",
-    "ground-relations.ttl": "https://linked.data.gov.au/def/fsdf/ground-relations",
-    "fsdf-themes.ttl": "https://linked.data.gov.au/def/fsdf-themes",
     "fuels.ttl": "https://linked.data.gov.au/def/fsdf/fuels",
+    "ground-relations.ttl": "https://linked.data.gov.au/def/fsdf/ground-relations",
     "observable-properties.ttl": "https://linked.data.gov.au/def/fsdf/observable-properties",
     "operational-statuses.ttl": "https://linked.data.gov.au/def/fsdf/operational-statuses",
     "placenames-categories.ttl": "https://linked.data.gov.au/def/placenames-categories",
