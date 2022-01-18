@@ -1,0 +1,32 @@
+@prefix Ownership: <https://linked.data.gov.au/def/fsdf/ownership/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linked.data.gov.au/def/fsdf/ownership/> a skos:ConceptScheme;
+  dct:created "2021-11-26"^^xsd:date;
+  dct:creator "GA";
+  dct:custodian "Irina Bastrakova";
+  dct:frequency <http://purl.org/cld/freq/completelyirregular>;
+  dct:language "en";
+  dct:licence <https://creativecommons.org/licenses/by/4.0/>;
+  dct:modified "2021-11-26"^^xsd:date;
+  dct:provenance "Vocabulary test provenance statement";
+  dct:publisher "ICSM";
+  skos:definition "Vocabulary of terms describing various aspects of ownership which may relate to a feature";
+  skos:hasTopConcept Ownership:private, Ownership:public;
+  skos:prefLabel "Ownership" .
+
+Ownership:private a skos:Concept;
+  dct:provenance "Concept test provenance statement";
+  skos:definition "The facility is privately owned and operated"@en;
+  skos:inScheme <https://linked.data.gov.au/def/fsdf/ownership/>;
+  skos:prefLabel "private"@en;
+  skos:topConceptOf <https://linked.data.gov.au/def/fsdf/ownership/> .
+
+Ownership:public a skos:Concept;
+  skos:definition "The facility is owned, leased or otherwise operated by a government body or public entity for the purpose of providing a service to the community"@en;
+  skos:inScheme <https://linked.data.gov.au/def/fsdf/ownership/>;
+  skos:prefLabel "public"@en;
+  skos:topConceptOf <https://linked.data.gov.au/def/fsdf/ownership/> .
