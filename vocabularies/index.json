@@ -8,5 +8,21 @@
     "themes-buildings-and-settlements.ttl": "https://linked.data.gov.au/def/fsdf/themes/buildings-and-settlements-cs",
     "themes-physical-infrastructure.ttl": "https://linked.data.gov.au/def/fsdf/themes/physical-infrastructure-cs",
     "themes-surface-hydrology.ttl": "https://linked.data.gov.au/def/fsdf/themes/surface-hydrology-cs",
-    "themes.ttl": "https://linked.data.gov.au/def/fsdf/themes"
+    "themes.ttl": "https://linked.data.gov.au/def/fsdf/themes",
+    "Authority_Code_ADDRESS_ALIAS_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/addressAliasType/",
+    "Authority_Code_ADDRESS_CHANGE_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/addressChangeType",
+    "Authority_Code_ADDRESS_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/addressType",
+    "Authority_Code_FLAT_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/flatType",
+    "Authority_Code_GEOCODED_LEVEL_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/geocodeLevelType",
+    "Authority_Code_GEOCODE_RELIABILITY_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/geocodeReliability",
+    "Authority_Code_GEOCODE_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/geocodeType",
+    "Authority_Code_LEVEL_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/levelType",
+    "Authority_Code_LOCALITY_ALIAS_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/localityAliasType",
+    "Authority_Code_LOCALITY_CLASS_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/localityClass",
+    "Authority_Code_MB_MATCH_CODE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/mbMatchType",
+    "Authority_Code_PS_JOIN_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/psJoinType",
+    "Authority_Code_STREET_CLASS_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/streetClass",
+    "Authority_Code_STREET_LOCALITY_ALIAS_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/streetLocalityAliasType",
+    "Authority_Code_STREET_SUFFIX_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/streetSuffix",
+    "Authority_Code_STREET_TYPE_AUT.ttl": "https://linked.data.gov.au/dataset/gnaf/code/streetType"
 }

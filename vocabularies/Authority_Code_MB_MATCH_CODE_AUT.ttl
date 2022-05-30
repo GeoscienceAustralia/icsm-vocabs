@@ -1,0 +1,70 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/mbMatchType/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/mbMatchType> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1 a skos:Concept ;
+    dcterms:identifier "1"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Parcel Level Geocode For The Address Has Been Applied And Clearly Within The Boundaries Of A Single Mesh Block.  The Mesh Block Id Allocated To The Address In Most Cases Is At A Very High Level Of Confidence."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Parcel Level Match"@en ;
+    skos:topConceptOf cs: .
+
+:2 a skos:Concept ;
+    dcterms:identifier "2"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Gap Geocoded Match For The Address Has Been Applied And Clearly Within The Boundaries Of A Single Mesh Block.  The Mesh Block Id Allocated To The Address In Most Cases Is At A High Level Of Confidence."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gap Geocoded Address Level Match"@en ;
+    skos:topConceptOf cs: .
+
+:3 a skos:Concept ;
+    dcterms:identifier "3"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Street-Locality Level Geocode For The Address Has Been Applied And Clearly Within The Boundaries Of A Single Mesh Block.  The Mesh Block Id Allocated To The Address In Most Cases Is At A High Level Of Confidence."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Street Locality Level Single Match"@en ;
+    skos:topConceptOf cs: .
+
+:4 a skos:Concept ;
+    dcterms:identifier "4"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Street-Locality Level Geocode For The Address Has Been Applied And Is Within The Boundaries Of A Multiple Mesh Blocks.  The Mesh Block Id Allocated To The Address Is At A Low Level Of Confidence."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Street Locality Level Multiple Match"@en ;
+    skos:topConceptOf cs: .
+
+:5 a skos:Concept ;
+    dcterms:identifier "5"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Locality Level Geocode For The Address Has Been Applied And Is Within The Boundaries Of A Multiple Mesh Blocks.  The Mesh Block Id Allocated To The Address Is At A Very Low Level Of Confidence."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Locality Level Multiple Match"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "mbMatchType"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Description of what the match code means"@en ;
+    skos:hasTopConcept :1,
+        :2,
+        :3,
+        :4,
+        :5 ;
+    skos:prefLabel "Mb Match Code"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+
