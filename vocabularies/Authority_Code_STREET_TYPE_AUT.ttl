@@ -1,0 +1,2710 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/streetType/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/streetType> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ACCESS a skos:Concept ;
+    dcterms:identifier "ACCESS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Accs"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Accs"@en ;
+    skos:topConceptOf cs: .
+
+:ACRE a skos:Concept ;
+    dcterms:identifier "ACRE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Acre"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Acre"@en ;
+    skos:topConceptOf cs: .
+
+:AIRWALK a skos:Concept ;
+    dcterms:identifier "AIRWALK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Airwalk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Awlk"@en ;
+    skos:topConceptOf cs: .
+
+:ALLEY a skos:Concept ;
+    dcterms:identifier "ALLEY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ally"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ally"@en ;
+    skos:topConceptOf cs: .
+
+:ALLEYWAY a skos:Concept ;
+    dcterms:identifier "ALLEYWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Alwy"@en ;
+    skos:topConceptOf cs: .
+
+:AMBLE a skos:Concept ;
+    dcterms:identifier "AMBLE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ambl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ambl"@en ;
+    skos:topConceptOf cs: .
+
+:APPROACH a skos:Concept ;
+    dcterms:identifier "APPROACH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "App"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "App"@en ;
+    skos:topConceptOf cs: .
+
+:ARCADE a skos:Concept ;
+    dcterms:identifier "ARCADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Arc"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Arc"@en ;
+    skos:topConceptOf cs: .
+
+:ARTERIAL a skos:Concept ;
+    dcterms:identifier "ARTERIAL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Artl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Artl"@en ;
+    skos:topConceptOf cs: .
+
+:ARTERY a skos:Concept ;
+    dcterms:identifier "ARTERY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Arty"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Arty"@en ;
+    skos:topConceptOf cs: .
+
+:AVENUE a skos:Concept ;
+    dcterms:identifier "AVENUE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Av"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Av"@en ;
+    skos:topConceptOf cs: .
+
+:BANAN a skos:Concept ;
+    dcterms:identifier "BANAN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ba"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ba"@en ;
+    skos:topConceptOf cs: .
+
+:BANK a skos:Concept ;
+    dcterms:identifier "BANK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bank"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bank"@en ;
+    skos:topConceptOf cs: .
+
+:BAY a skos:Concept ;
+    dcterms:identifier "BAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bay"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bay"@en ;
+    skos:topConceptOf cs: .
+
+:BEACH a skos:Concept ;
+    dcterms:identifier "BEACH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bch"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bch"@en ;
+    skos:topConceptOf cs: .
+
+:BEND a skos:Concept ;
+    dcterms:identifier "BEND"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bend"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bend"@en ;
+    skos:topConceptOf cs: .
+
+:BOARDWALK a skos:Concept ;
+    dcterms:identifier "BOARDWALK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bwlk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bwlk"@en ;
+    skos:topConceptOf cs: .
+
+:BOULEVARD a skos:Concept ;
+    dcterms:identifier "BOULEVARD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bvd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bvd"@en ;
+    skos:topConceptOf cs: .
+
+:BOULEVARDE a skos:Concept ;
+    dcterms:identifier "BOULEVARDE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bvde"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bvde"@en ;
+    skos:topConceptOf cs: .
+
+:BOUNDARY a skos:Concept ;
+    dcterms:identifier "BOUNDARY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bdy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bdy"@en ;
+    skos:topConceptOf cs: .
+
+:BOWL a skos:Concept ;
+    dcterms:identifier "BOWL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bowl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bowl"@en ;
+    skos:topConceptOf cs: .
+
+:BRACE a skos:Concept ;
+    dcterms:identifier "BRACE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Br"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Br"@en ;
+    skos:topConceptOf cs: .
+
+:BRAE a skos:Concept ;
+    dcterms:identifier "BRAE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Brae"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Brae"@en ;
+    skos:topConceptOf cs: .
+
+:BRANCH a skos:Concept ;
+    dcterms:identifier "BRANCH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bran"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bran"@en ;
+    skos:topConceptOf cs: .
+
+:BREAK a skos:Concept ;
+    dcterms:identifier "BREAK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Brk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Brk"@en ;
+    skos:topConceptOf cs: .
+
+:BRETT a skos:Concept ;
+    dcterms:identifier "BRETT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bret"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bret"@en ;
+    skos:topConceptOf cs: .
+
+:BRIDGE a skos:Concept ;
+    dcterms:identifier "BRIDGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bdge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bdge"@en ;
+    skos:topConceptOf cs: .
+
+:BROADWALK a skos:Concept ;
+    dcterms:identifier "BROADWALK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Brdwlk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Brdwlk"@en ;
+    skos:topConceptOf cs: .
+
+:BROADWAY a skos:Concept ;
+    dcterms:identifier "BROADWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bdwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bdwy"@en ;
+    skos:topConceptOf cs: .
+
+:BROW a skos:Concept ;
+    dcterms:identifier "BROW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Brow"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Brow"@en ;
+    skos:topConceptOf cs: .
+
+:BULL a skos:Concept ;
+    dcterms:identifier "BULL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bull"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bull"@en ;
+    skos:topConceptOf cs: .
+
+:BUSWAY a skos:Concept ;
+    dcterms:identifier "BUSWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bswy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bswy"@en ;
+    skos:topConceptOf cs: .
+
+:BYPASS a skos:Concept ;
+    dcterms:identifier "BYPASS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bypa"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bypa"@en ;
+    skos:topConceptOf cs: .
+
+:BYWAY a skos:Concept ;
+    dcterms:identifier "BYWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bywy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bywy"@en ;
+    skos:topConceptOf cs: .
+
+:CAUSEWAY a skos:Concept ;
+    dcterms:identifier "CAUSEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cswy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cswy"@en ;
+    skos:topConceptOf cs: .
+
+:CENTRE a skos:Concept ;
+    dcterms:identifier "CENTRE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ctr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ctr"@en ;
+    skos:topConceptOf cs: .
+
+:CENTREWAY a skos:Concept ;
+    dcterms:identifier "CENTREWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cnwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cnwy"@en ;
+    skos:topConceptOf cs: .
+
+:CHASE a skos:Concept ;
+    dcterms:identifier "CHASE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ch"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ch"@en ;
+    skos:topConceptOf cs: .
+
+:CIRCLE a skos:Concept ;
+    dcterms:identifier "CIRCLE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cir"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cir"@en ;
+    skos:topConceptOf cs: .
+
+:CIRCLET a skos:Concept ;
+    dcterms:identifier "CIRCLET"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Clt"@en ;
+    skos:topConceptOf cs: .
+
+:CIRCUIT a skos:Concept ;
+    dcterms:identifier "CIRCUIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cct"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cct"@en ;
+    skos:topConceptOf cs: .
+
+:CIRCUS a skos:Concept ;
+    dcterms:identifier "CIRCUS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crcs"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crcs"@en ;
+    skos:topConceptOf cs: .
+
+:CLOSE a skos:Concept ;
+    dcterms:identifier "CLOSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cl"@en ;
+    skos:topConceptOf cs: .
+
+:CLUSTER a skos:Concept ;
+    dcterms:identifier "CLUSTER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Clr"@en ;
+    skos:topConceptOf cs: .
+
+:COLONNADE a skos:Concept ;
+    dcterms:identifier "COLONNADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clde"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Clde"@en ;
+    skos:topConceptOf cs: .
+
+:COMMON a skos:Concept ;
+    dcterms:identifier "COMMON"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cmmn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cmmn"@en ;
+    skos:topConceptOf cs: .
+
+:COMMONS a skos:Concept ;
+    dcterms:identifier "COMMONS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cmmns"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cmmns"@en ;
+    skos:topConceptOf cs: .
+
+:CONCORD a skos:Concept ;
+    dcterms:identifier "CONCORD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cncd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cncd"@en ;
+    skos:topConceptOf cs: .
+
+:CONCOURSE a skos:Concept ;
+    dcterms:identifier "CONCOURSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Con"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Con"@en ;
+    skos:topConceptOf cs: .
+
+:CONNECTION a skos:Concept ;
+    dcterms:identifier "CONNECTION"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cntn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cntn"@en ;
+    skos:topConceptOf cs: .
+
+:CONNECTOR a skos:Concept ;
+    dcterms:identifier "CONNECTOR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Conr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Conr"@en ;
+    skos:topConceptOf cs: .
+
+:COPSE a skos:Concept ;
+    dcterms:identifier "COPSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cps"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cps"@en ;
+    skos:topConceptOf cs: .
+
+:CORNER a skos:Concept ;
+    dcterms:identifier "CORNER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cnr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cnr"@en ;
+    skos:topConceptOf cs: .
+
+:CORSO a skos:Concept ;
+    dcterms:identifier "CORSO"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cso"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cso"@en ;
+    skos:topConceptOf cs: .
+
+:COURSE a skos:Concept ;
+    dcterms:identifier "COURSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crse"@en ;
+    skos:topConceptOf cs: .
+
+:COURT a skos:Concept ;
+    dcterms:identifier "COURT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ct"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ct"@en ;
+    skos:topConceptOf cs: .
+
+:COURTYARD a skos:Concept ;
+    dcterms:identifier "COURTYARD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ctyd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ctyd"@en ;
+    skos:topConceptOf cs: .
+
+:COVE a skos:Concept ;
+    dcterms:identifier "COVE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cove"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cove"@en ;
+    skos:topConceptOf cs: .
+
+:CRESCENT a skos:Concept ;
+    dcterms:identifier "CRESCENT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cr"@en ;
+    skos:topConceptOf cs: .
+
+:CREST a skos:Concept ;
+    dcterms:identifier "CREST"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crst"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crst"@en ;
+    skos:topConceptOf cs: .
+
+:CRIEF a skos:Concept ;
+    dcterms:identifier "CRIEF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crf"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crf"@en ;
+    skos:topConceptOf cs: .
+
+:CROOK a skos:Concept ;
+    dcterms:identifier "CROOK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crk"@en ;
+    skos:topConceptOf cs: .
+
+:CROSS a skos:Concept ;
+    dcterms:identifier "CROSS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crss"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crss"@en ;
+    skos:topConceptOf cs: .
+
+:CROSSING a skos:Concept ;
+    dcterms:identifier "CROSSING"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crsg"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crsg"@en ;
+    skos:topConceptOf cs: .
+
+:CROSSOVER a skos:Concept ;
+    dcterms:identifier "CROSSOVER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Crvr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Crvr"@en ;
+    skos:topConceptOf cs: .
+
+:CRUISEWAY a skos:Concept ;
+    dcterms:identifier "CRUISEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cuwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cuwy"@en ;
+    skos:topConceptOf cs: .
+
+:CUL-DE-SAC a skos:Concept ;
+    dcterms:identifier "CUL-DE-SAC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Csac"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Csac"@en ;
+    skos:topConceptOf cs: .
+
+:CUT a skos:Concept ;
+    dcterms:identifier "CUT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cut"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cut"@en ;
+    skos:topConceptOf cs: .
+
+:CUTTING a skos:Concept ;
+    dcterms:identifier "CUTTING"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cutt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cutt"@en ;
+    skos:topConceptOf cs: .
+
+:DALE a skos:Concept ;
+    dcterms:identifier "DALE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dale"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dale"@en ;
+    skos:topConceptOf cs: .
+
+:DASH a skos:Concept ;
+    dcterms:identifier "DASH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dash"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dash"@en ;
+    skos:topConceptOf cs: .
+
+:DELL a skos:Concept ;
+    dcterms:identifier "DELL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dell"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dell"@en ;
+    skos:topConceptOf cs: .
+
+:DENE a skos:Concept ;
+    dcterms:identifier "DENE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dene"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dene"@en ;
+    skos:topConceptOf cs: .
+
+:DEVIATION a skos:Concept ;
+    dcterms:identifier "DEVIATION"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "De"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "De"@en ;
+    skos:topConceptOf cs: .
+
+:DIP a skos:Concept ;
+    dcterms:identifier "DIP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dip"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dip"@en ;
+    skos:topConceptOf cs: .
+
+:DISTRIBUTOR a skos:Concept ;
+    dcterms:identifier "DISTRIBUTOR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dstr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dstr"@en ;
+    skos:topConceptOf cs: .
+
+:DIVIDE a skos:Concept ;
+    dcterms:identifier "DIVIDE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Div"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Div"@en ;
+    skos:topConceptOf cs: .
+
+:DOCK a skos:Concept ;
+    dcterms:identifier "DOCK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dock"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dock"@en ;
+    skos:topConceptOf cs: .
+
+:DOMAIN a skos:Concept ;
+    dcterms:identifier "DOMAIN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dom"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dom"@en ;
+    skos:topConceptOf cs: .
+
+:DOWN a skos:Concept ;
+    dcterms:identifier "DOWN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Down"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Down"@en ;
+    skos:topConceptOf cs: .
+
+:DOWNS a skos:Concept ;
+    dcterms:identifier "DOWNS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dwns"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dwns"@en ;
+    skos:topConceptOf cs: .
+
+:DRIVE a skos:Concept ;
+    dcterms:identifier "DRIVE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dr"@en ;
+    skos:topConceptOf cs: .
+
+:DRIVEWAY a skos:Concept ;
+    dcterms:identifier "DRIVEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dvwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Dvwy"@en ;
+    skos:topConceptOf cs: .
+
+:EASEMENT a skos:Concept ;
+    dcterms:identifier "EASEMENT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Esmt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esmt"@en ;
+    skos:topConceptOf cs: .
+
+:EAST a skos:Concept ;
+    dcterms:identifier "EAST"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "East"@en ;
+    skos:topConceptOf cs: .
+
+:EDGE a skos:Concept ;
+    dcterms:identifier "EDGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Edge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Edge"@en ;
+    skos:topConceptOf cs: .
+
+:ELBOW a skos:Concept ;
+    dcterms:identifier "ELBOW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Elb"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Elb"@en ;
+    skos:topConceptOf cs: .
+
+:END a skos:Concept ;
+    dcterms:identifier "END"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "End"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "End"@en ;
+    skos:topConceptOf cs: .
+
+:ENTRANCE a skos:Concept ;
+    dcterms:identifier "ENTRANCE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ent"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ent"@en ;
+    skos:topConceptOf cs: .
+
+:ESPLANADE a skos:Concept ;
+    dcterms:identifier "ESPLANADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Esp"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Esp"@en ;
+    skos:topConceptOf cs: .
+
+:ESTATE a skos:Concept ;
+    dcterms:identifier "ESTATE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Est"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Est"@en ;
+    skos:topConceptOf cs: .
+
+:EXPRESSWAY a skos:Concept ;
+    dcterms:identifier "EXPRESSWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Exp"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Exp"@en ;
+    skos:topConceptOf cs: .
+
+:EXTENSION a skos:Concept ;
+    dcterms:identifier "EXTENSION"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Extn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Extn"@en ;
+    skos:topConceptOf cs: .
+
+:FAIRWAY a skos:Concept ;
+    dcterms:identifier "FAIRWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fawy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fawy"@en ;
+    skos:topConceptOf cs: .
+
+:FIREBREAK a skos:Concept ;
+    dcterms:identifier "FIREBREAK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fbrk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fbrk"@en ;
+    skos:topConceptOf cs: .
+
+:FIRELINE a skos:Concept ;
+    dcterms:identifier "FIRELINE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flne"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Flne"@en ;
+    skos:topConceptOf cs: .
+
+:FIRETRACK a skos:Concept ;
+    dcterms:identifier "FIRETRACK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ftrk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ftrk"@en ;
+    skos:topConceptOf cs: .
+
+:FIRETRAIL a skos:Concept ;
+    dcterms:identifier "FIRETRAIL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fitr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fitr"@en ;
+    skos:topConceptOf cs: .
+
+:FLAT a skos:Concept ;
+    dcterms:identifier "FLAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flat"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Flat"@en ;
+    skos:topConceptOf cs: .
+
+:FLATS a skos:Concept ;
+    dcterms:identifier "FLATS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flts"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Flts"@en ;
+    skos:topConceptOf cs: .
+
+:FOLLOW a skos:Concept ;
+    dcterms:identifier "FOLLOW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Folw"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Folw"@en ;
+    skos:topConceptOf cs: .
+
+:FOOTWAY a skos:Concept ;
+    dcterms:identifier "FOOTWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ftwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ftwy"@en ;
+    skos:topConceptOf cs: .
+
+:FORD a skos:Concept ;
+    dcterms:identifier "FORD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ford"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ford"@en ;
+    skos:topConceptOf cs: .
+
+:FORESHORE a skos:Concept ;
+    dcterms:identifier "FORESHORE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fshr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fshr"@en ;
+    skos:topConceptOf cs: .
+
+:FORK a skos:Concept ;
+    dcterms:identifier "FORK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fork"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fork"@en ;
+    skos:topConceptOf cs: .
+
+:FORMATION a skos:Concept ;
+    dcterms:identifier "FORMATION"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Form"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Form"@en ;
+    skos:topConceptOf cs: .
+
+:FREEWAY a skos:Concept ;
+    dcterms:identifier "FREEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Fwy"@en ;
+    skos:topConceptOf cs: .
+
+:FRONT a skos:Concept ;
+    dcterms:identifier "FRONT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Frnt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Frnt"@en ;
+    skos:topConceptOf cs: .
+
+:FRONTAGE a skos:Concept ;
+    dcterms:identifier "FRONTAGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Frtg"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Frtg"@en ;
+    skos:topConceptOf cs: .
+
+:GAP a skos:Concept ;
+    dcterms:identifier "GAP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gap"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gap"@en ;
+    skos:topConceptOf cs: .
+
+:GARDEN a skos:Concept ;
+    dcterms:identifier "GARDEN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gdn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gdn"@en ;
+    skos:topConceptOf cs: .
+
+:GARDENS a skos:Concept ;
+    dcterms:identifier "GARDENS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gdns"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gdns"@en ;
+    skos:topConceptOf cs: .
+
+:GATE a skos:Concept ;
+    dcterms:identifier "GATE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gte"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gte"@en ;
+    skos:topConceptOf cs: .
+
+:GATEWAY a skos:Concept ;
+    dcterms:identifier "GATEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gwy"@en ;
+    skos:topConceptOf cs: .
+
+:GLADE a skos:Concept ;
+    dcterms:identifier "GLADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Glde"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Glde"@en ;
+    skos:topConceptOf cs: .
+
+:GLEN a skos:Concept ;
+    dcterms:identifier "GLEN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Glen"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Glen"@en ;
+    skos:topConceptOf cs: .
+
+:GRANGE a skos:Concept ;
+    dcterms:identifier "GRANGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gra"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gra"@en ;
+    skos:topConceptOf cs: .
+
+:GREEN a skos:Concept ;
+    dcterms:identifier "GREEN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Grn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Grn"@en ;
+    skos:topConceptOf cs: .
+
+:GROVE a skos:Concept ;
+    dcterms:identifier "GROVE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gr"@en ;
+    skos:topConceptOf cs: .
+
+:GULLY a skos:Concept ;
+    dcterms:identifier "GULLY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gly"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gly"@en ;
+    skos:topConceptOf cs: .
+
+:HARBOUR a skos:Concept ;
+    dcterms:identifier "HARBOUR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hrbr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hrbr"@en ;
+    skos:topConceptOf cs: .
+
+:HAVEN a skos:Concept ;
+    dcterms:identifier "HAVEN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hvn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hvn"@en ;
+    skos:topConceptOf cs: .
+
+:HEATH a skos:Concept ;
+    dcterms:identifier "HEATH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hth"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hth"@en ;
+    skos:topConceptOf cs: .
+
+:HEIGHTS a skos:Concept ;
+    dcterms:identifier "HEIGHTS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hts"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hts"@en ;
+    skos:topConceptOf cs: .
+
+:HIGHROAD a skos:Concept ;
+    dcterms:identifier "HIGHROAD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hird"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hird"@en ;
+    skos:topConceptOf cs: .
+
+:HIGHWAY a skos:Concept ;
+    dcterms:identifier "HIGHWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hwy"@en ;
+    skos:topConceptOf cs: .
+
+:HIKE a skos:Concept ;
+    dcterms:identifier "HIKE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hike"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hike"@en ;
+    skos:topConceptOf cs: .
+
+:HILL a skos:Concept ;
+    dcterms:identifier "HILL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hill"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hill"@en ;
+    skos:topConceptOf cs: .
+
+:HILLS a skos:Concept ;
+    dcterms:identifier "HILLS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hills"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hills"@en ;
+    skos:topConceptOf cs: .
+
+:HOLLOW a skos:Concept ;
+    dcterms:identifier "HOLLOW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hllw"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hllw"@en ;
+    skos:topConceptOf cs: .
+
+:HUB a skos:Concept ;
+    dcterms:identifier "HUB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hub"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hub"@en ;
+    skos:topConceptOf cs: .
+
+:INLET a skos:Concept ;
+    dcterms:identifier "INLET"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Inlt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Inlt"@en ;
+    skos:topConceptOf cs: .
+
+:INTERCHANGE a skos:Concept ;
+    dcterms:identifier "INTERCHANGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Intg"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Intg"@en ;
+    skos:topConceptOf cs: .
+
+:ISLAND a skos:Concept ;
+    dcterms:identifier "ISLAND"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Id"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Id"@en ;
+    skos:topConceptOf cs: .
+
+:JUNCTION a skos:Concept ;
+    dcterms:identifier "JUNCTION"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Jnc"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Jnc"@en ;
+    skos:topConceptOf cs: .
+
+:KEY a skos:Concept ;
+    dcterms:identifier "KEY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Key"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Key"@en ;
+    skos:topConceptOf cs: .
+
+:KEYS a skos:Concept ;
+    dcterms:identifier "KEYS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Keys"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Keys"@en ;
+    skos:topConceptOf cs: .
+
+:KNOLL a skos:Concept ;
+    dcterms:identifier "KNOLL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Knol"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Knol"@en ;
+    skos:topConceptOf cs: .
+
+:LADDER a skos:Concept ;
+    dcterms:identifier "LADDER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ladr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ladr"@en ;
+    skos:topConceptOf cs: .
+
+:LANDING a skos:Concept ;
+    dcterms:identifier "LANDING"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ldg"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ldg"@en ;
+    skos:topConceptOf cs: .
+
+:LANE a skos:Concept ;
+    dcterms:identifier "LANE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lane"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lane"@en ;
+    skos:topConceptOf cs: .
+
+:LANEWAY a skos:Concept ;
+    dcterms:identifier "LANEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lnwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lnwy"@en ;
+    skos:topConceptOf cs: .
+
+:LEAD a skos:Concept ;
+    dcterms:identifier "LEAD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lead"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lead"@en ;
+    skos:topConceptOf cs: .
+
+:LEADER a skos:Concept ;
+    dcterms:identifier "LEADER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ledr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ledr"@en ;
+    skos:topConceptOf cs: .
+
+:LINE a skos:Concept ;
+    dcterms:identifier "LINE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Line"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Line"@en ;
+    skos:topConceptOf cs: .
+
+:LINK a skos:Concept ;
+    dcterms:identifier "LINK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Link"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Link"@en ;
+    skos:topConceptOf cs: .
+
+:LOOKOUT a skos:Concept ;
+    dcterms:identifier "LOOKOUT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lkt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lkt"@en ;
+    skos:topConceptOf cs: .
+
+:LOOP a skos:Concept ;
+    dcterms:identifier "LOOP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Loop"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Loop"@en ;
+    skos:topConceptOf cs: .
+
+:LYNNE a skos:Concept ;
+    dcterms:identifier "LYNNE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lynn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lynn"@en ;
+    skos:topConceptOf cs: .
+
+:MALL a skos:Concept ;
+    dcterms:identifier "MALL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mall"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mall"@en ;
+    skos:topConceptOf cs: .
+
+:MANOR a skos:Concept ;
+    dcterms:identifier "MANOR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Manr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Manr"@en ;
+    skos:topConceptOf cs: .
+
+:MART a skos:Concept ;
+    dcterms:identifier "MART"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mart"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mart"@en ;
+    skos:topConceptOf cs: .
+
+:MAZE a skos:Concept ;
+    dcterms:identifier "MAZE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mz"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mz"@en ;
+    skos:topConceptOf cs: .
+
+:MEAD a skos:Concept ;
+    dcterms:identifier "MEAD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mead"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mead"@en ;
+    skos:topConceptOf cs: .
+
+:MEANDER a skos:Concept ;
+    dcterms:identifier "MEANDER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mndr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mndr"@en ;
+    skos:topConceptOf cs: .
+
+:MEW a skos:Concept ;
+    dcterms:identifier "MEW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mew"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mew"@en ;
+    skos:topConceptOf cs: .
+
+:MEWS a skos:Concept ;
+    dcterms:identifier "MEWS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mews"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mews"@en ;
+    skos:topConceptOf cs: .
+
+:MILE a skos:Concept ;
+    dcterms:identifier "MILE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mile"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mile"@en ;
+    skos:topConceptOf cs: .
+
+:MOTORWAY a skos:Concept ;
+    dcterms:identifier "MOTORWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mtwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mtwy"@en ;
+    skos:topConceptOf cs: .
+
+:NOOK a skos:Concept ;
+    dcterms:identifier "NOOK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Nook"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nook"@en ;
+    skos:topConceptOf cs: .
+
+:NORTH a skos:Concept ;
+    dcterms:identifier "NORTH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Nth"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Nth"@en ;
+    skos:topConceptOf cs: .
+
+:NULL a skos:Concept ;
+    dcterms:identifier "NULL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Null"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Null"@en ;
+    skos:topConceptOf cs: .
+
+:OUTLET a skos:Concept ;
+    dcterms:identifier "OUTLET"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Otlt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Otlt"@en ;
+    skos:topConceptOf cs: .
+
+:OUTLOOK a skos:Concept ;
+    dcterms:identifier "OUTLOOK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Otlk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Otlk"@en ;
+    skos:topConceptOf cs: .
+
+:OVAL a skos:Concept ;
+    dcterms:identifier "OVAL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Oval"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Oval"@en ;
+    skos:topConceptOf cs: .
+
+:PALMS a skos:Concept ;
+    dcterms:identifier "PALMS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plms"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Plms"@en ;
+    skos:topConceptOf cs: .
+
+:PARADE a skos:Concept ;
+    dcterms:identifier "PARADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pde"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pde"@en ;
+    skos:topConceptOf cs: .
+
+:PARADISE a skos:Concept ;
+    dcterms:identifier "PARADISE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Prds"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Prds"@en ;
+    skos:topConceptOf cs: .
+
+:PARK a skos:Concept ;
+    dcterms:identifier "PARK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Park"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Park"@en ;
+    skos:topConceptOf cs: .
+
+:PARKWAY a skos:Concept ;
+    dcterms:identifier "PARKWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pwy"@en ;
+    skos:topConceptOf cs: .
+
+:PART a skos:Concept ;
+    dcterms:identifier "PART"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Part"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Part"@en ;
+    skos:topConceptOf cs: .
+
+:PASS a skos:Concept ;
+    dcterms:identifier "PASS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pass"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pass"@en ;
+    skos:topConceptOf cs: .
+
+:PASSAGE a skos:Concept ;
+    dcterms:identifier "PASSAGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Psge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Psge"@en ;
+    skos:topConceptOf cs: .
+
+:PATH a skos:Concept ;
+    dcterms:identifier "PATH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Path"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Path"@en ;
+    skos:topConceptOf cs: .
+
+:PATHWAY a skos:Concept ;
+    dcterms:identifier "PATHWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pway"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pway"@en ;
+    skos:topConceptOf cs: .
+
+:PENINSULA a skos:Concept ;
+    dcterms:identifier "PENINSULA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Psla"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Psla"@en ;
+    skos:topConceptOf cs: .
+
+:PIAZZA a skos:Concept ;
+    dcterms:identifier "PIAZZA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Piaz"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Piaz"@en ;
+    skos:topConceptOf cs: .
+
+:PLACE a skos:Concept ;
+    dcterms:identifier "PLACE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pl"@en ;
+    skos:topConceptOf cs: .
+
+:PLAZA a skos:Concept ;
+    dcterms:identifier "PLAZA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plza"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Plza"@en ;
+    skos:topConceptOf cs: .
+
+:POCKET a skos:Concept ;
+    dcterms:identifier "POCKET"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pkt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pkt"@en ;
+    skos:topConceptOf cs: .
+
+:POINT a skos:Concept ;
+    dcterms:identifier "POINT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Pnt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pnt"@en ;
+    skos:topConceptOf cs: .
+
+:PORT a skos:Concept ;
+    dcterms:identifier "PORT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Port"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Port"@en ;
+    skos:topConceptOf cs: .
+
+:PRECINCT a skos:Concept ;
+    dcterms:identifier "PRECINCT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Prec"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Prec"@en ;
+    skos:topConceptOf cs: .
+
+:PROMENADE a skos:Concept ;
+    dcterms:identifier "PROMENADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Prom"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Prom"@en ;
+    skos:topConceptOf cs: .
+
+:PURSUIT a skos:Concept ;
+    dcterms:identifier "PURSUIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Prst"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Prst"@en ;
+    skos:topConceptOf cs: .
+
+:QUAD a skos:Concept ;
+    dcterms:identifier "QUAD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Quad"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Quad"@en ;
+    skos:topConceptOf cs: .
+
+:QUADRANT a skos:Concept ;
+    dcterms:identifier "QUADRANT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Qdrt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Qdrt"@en ;
+    skos:topConceptOf cs: .
+
+:QUAY a skos:Concept ;
+    dcterms:identifier "QUAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Qy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Qy"@en ;
+    skos:topConceptOf cs: .
+
+:QUAYS a skos:Concept ;
+    dcterms:identifier "QUAYS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Qys"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Qys"@en ;
+    skos:topConceptOf cs: .
+
+:RAMBLE a skos:Concept ;
+    dcterms:identifier "RAMBLE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rmbl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rmbl"@en ;
+    skos:topConceptOf cs: .
+
+:RAMP a skos:Concept ;
+    dcterms:identifier "RAMP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ramp"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ramp"@en ;
+    skos:topConceptOf cs: .
+
+:RANGE a skos:Concept ;
+    dcterms:identifier "RANGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rnge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rnge"@en ;
+    skos:topConceptOf cs: .
+
+:REACH a skos:Concept ;
+    dcterms:identifier "REACH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rch"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rch"@en ;
+    skos:topConceptOf cs: .
+
+:REEF a skos:Concept ;
+    dcterms:identifier "REEF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Reef"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Reef"@en ;
+    skos:topConceptOf cs: .
+
+:RESERVE a skos:Concept ;
+    dcterms:identifier "RESERVE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Res"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Res"@en ;
+    skos:topConceptOf cs: .
+
+:REST a skos:Concept ;
+    dcterms:identifier "REST"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rest"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rest"@en ;
+    skos:topConceptOf cs: .
+
+:RETREAT a skos:Concept ;
+    dcterms:identifier "RETREAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rtt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rtt"@en ;
+    skos:topConceptOf cs: .
+
+:RETURN a skos:Concept ;
+    dcterms:identifier "RETURN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rtn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rtn"@en ;
+    skos:topConceptOf cs: .
+
+:RIDE a skos:Concept ;
+    dcterms:identifier "RIDE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ride"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ride"@en ;
+    skos:topConceptOf cs: .
+
+:RIDGE a skos:Concept ;
+    dcterms:identifier "RIDGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rdge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rdge"@en ;
+    skos:topConceptOf cs: .
+
+:RIGHTOFWAY a skos:Concept ;
+    dcterms:identifier "RIGHTOFWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rofw"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rofw"@en ;
+    skos:topConceptOf cs: .
+
+:RING a skos:Concept ;
+    dcterms:identifier "RING"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ring"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ring"@en ;
+    skos:topConceptOf cs: .
+
+:RISE a skos:Concept ;
+    dcterms:identifier "RISE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rise"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rise"@en ;
+    skos:topConceptOf cs: .
+
+:RISING a skos:Concept ;
+    dcterms:identifier "RISING"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rsng"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rsng"@en ;
+    skos:topConceptOf cs: .
+
+:RIVER a skos:Concept ;
+    dcterms:identifier "RIVER"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rvr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rvr"@en ;
+    skos:topConceptOf cs: .
+
+:ROAD a skos:Concept ;
+    dcterms:identifier "ROAD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rd"@en ;
+    skos:topConceptOf cs: .
+
+:ROADS a skos:Concept ;
+    dcterms:identifier "ROADS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rds"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rds"@en ;
+    skos:topConceptOf cs: .
+
+:ROADWAY a skos:Concept ;
+    dcterms:identifier "ROADWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rdwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rdwy"@en ;
+    skos:topConceptOf cs: .
+
+:ROTARY a skos:Concept ;
+    dcterms:identifier "ROTARY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rty"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rty"@en ;
+    skos:topConceptOf cs: .
+
+:ROUND a skos:Concept ;
+    dcterms:identifier "ROUND"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rnd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rnd"@en ;
+    skos:topConceptOf cs: .
+
+:ROUTE a skos:Concept ;
+    dcterms:identifier "ROUTE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rte"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rte"@en ;
+    skos:topConceptOf cs: .
+
+:ROW a skos:Concept ;
+    dcterms:identifier "ROW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Row"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Row"@en ;
+    skos:topConceptOf cs: .
+
+:ROWE a skos:Concept ;
+    dcterms:identifier "ROWE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rowe"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rowe"@en ;
+    skos:topConceptOf cs: .
+
+:RUE a skos:Concept ;
+    dcterms:identifier "RUE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rue"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rue"@en ;
+    skos:topConceptOf cs: .
+
+:RUN a skos:Concept ;
+    dcterms:identifier "RUN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Run"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Run"@en ;
+    skos:topConceptOf cs: .
+
+:SERVICEWAY a skos:Concept ;
+    dcterms:identifier "SERVICEWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Svwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Svwy"@en ;
+    skos:topConceptOf cs: .
+
+:SHUNT a skos:Concept ;
+    dcterms:identifier "SHUNT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shun"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Shun"@en ;
+    skos:topConceptOf cs: .
+
+:SKYLINE a skos:Concept ;
+    dcterms:identifier "SKYLINE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Skln"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Skln"@en ;
+    skos:topConceptOf cs: .
+
+:SLOPE a skos:Concept ;
+    dcterms:identifier "SLOPE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Slpe"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Slpe"@en ;
+    skos:topConceptOf cs: .
+
+:SOUTH a skos:Concept ;
+    dcterms:identifier "SOUTH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sth"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sth"@en ;
+    skos:topConceptOf cs: .
+
+:SPUR a skos:Concept ;
+    dcterms:identifier "SPUR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Spur"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Spur"@en ;
+    skos:topConceptOf cs: .
+
+:SQUARE a skos:Concept ;
+    dcterms:identifier "SQUARE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sq"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sq"@en ;
+    skos:topConceptOf cs: .
+
+:STEPS a skos:Concept ;
+    dcterms:identifier "STEPS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stps"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stps"@en ;
+    skos:topConceptOf cs: .
+
+:STRAIGHT a skos:Concept ;
+    dcterms:identifier "STRAIGHT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Strt"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Strt"@en ;
+    skos:topConceptOf cs: .
+
+:STRAIT a skos:Concept ;
+    dcterms:identifier "STRAIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stai"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stai"@en ;
+    skos:topConceptOf cs: .
+
+:STRAND a skos:Concept ;
+    dcterms:identifier "STRAND"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stra"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stra"@en ;
+    skos:topConceptOf cs: .
+
+:STREET a skos:Concept ;
+    dcterms:identifier "STREET"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "St"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "St"@en ;
+    skos:topConceptOf cs: .
+
+:STRIP a skos:Concept ;
+    dcterms:identifier "STRIP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Strp"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Strp"@en ;
+    skos:topConceptOf cs: .
+
+:SUBWAY a skos:Concept ;
+    dcterms:identifier "SUBWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sbwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sbwy"@en ;
+    skos:topConceptOf cs: .
+
+:TARN a skos:Concept ;
+    dcterms:identifier "TARN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tarn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tarn"@en ;
+    skos:topConceptOf cs: .
+
+:TERRACE a skos:Concept ;
+    dcterms:identifier "TERRACE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tce"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tce"@en ;
+    skos:topConceptOf cs: .
+
+:THOROUGHFARE a skos:Concept ;
+    dcterms:identifier "THOROUGHFARE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Thfr"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Thfr"@en ;
+    skos:topConceptOf cs: .
+
+:THROUGHWAY a skos:Concept ;
+    dcterms:identifier "THROUGHWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Thru"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Thru"@en ;
+    skos:topConceptOf cs: .
+
+:TOLLWAY a skos:Concept ;
+    dcterms:identifier "TOLLWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tlwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tlwy"@en ;
+    skos:topConceptOf cs: .
+
+:TOP a skos:Concept ;
+    dcterms:identifier "TOP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Top"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Top"@en ;
+    skos:topConceptOf cs: .
+
+:TOR a skos:Concept ;
+    dcterms:identifier "TOR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tor"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tor"@en ;
+    skos:topConceptOf cs: .
+
+:TRACK a skos:Concept ;
+    dcterms:identifier "TRACK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Trk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Trk"@en ;
+    skos:topConceptOf cs: .
+
+:TRAIL a skos:Concept ;
+    dcterms:identifier "TRAIL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Trl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Trl"@en ;
+    skos:topConceptOf cs: .
+
+:TRAMWAY a skos:Concept ;
+    dcterms:identifier "TRAMWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tmwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tmwy"@en ;
+    skos:topConceptOf cs: .
+
+:TRAVERSE a skos:Concept ;
+    dcterms:identifier "TRAVERSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tvse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tvse"@en ;
+    skos:topConceptOf cs: .
+
+:TRIANGLE a skos:Concept ;
+    dcterms:identifier "TRIANGLE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Triangle"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Triangle"@en ;
+    skos:topConceptOf cs: .
+
+:TRUNKWAY a skos:Concept ;
+    dcterms:identifier "TRUNKWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tkwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tkwy"@en ;
+    skos:topConceptOf cs: .
+
+:TUNNEL a skos:Concept ;
+    dcterms:identifier "TUNNEL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tunl"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tunl"@en ;
+    skos:topConceptOf cs: .
+
+:TURN a skos:Concept ;
+    dcterms:identifier "TURN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Turn"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Turn"@en ;
+    skos:topConceptOf cs: .
+
+:TWIST a skos:Concept ;
+    dcterms:identifier "TWIST"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Twist"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Twist"@en ;
+    skos:topConceptOf cs: .
+
+:UNDERPASS a skos:Concept ;
+    dcterms:identifier "UNDERPASS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Upas"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Upas"@en ;
+    skos:topConceptOf cs: .
+
+:VALE a skos:Concept ;
+    dcterms:identifier "VALE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vale"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vale"@en ;
+    skos:topConceptOf cs: .
+
+:VALLEY a skos:Concept ;
+    dcterms:identifier "VALLEY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vlly"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vlly"@en ;
+    skos:topConceptOf cs: .
+
+:VERGE a skos:Concept ;
+    dcterms:identifier "VERGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Verge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Verge"@en ;
+    skos:topConceptOf cs: .
+
+:VIADUCT a skos:Concept ;
+    dcterms:identifier "VIADUCT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Viad"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Viad"@en ;
+    skos:topConceptOf cs: .
+
+:VIEW a skos:Concept ;
+    dcterms:identifier "VIEW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "View"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "View"@en ;
+    skos:topConceptOf cs: .
+
+:VIEWS a skos:Concept ;
+    dcterms:identifier "VIEWS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vws"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vws"@en ;
+    skos:topConceptOf cs: .
+
+:VILLA a skos:Concept ;
+    dcterms:identifier "VILLA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vlla"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vlla"@en ;
+    skos:topConceptOf cs: .
+
+:VILLAGE a skos:Concept ;
+    dcterms:identifier "VILLAGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vlge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vlge"@en ;
+    skos:topConceptOf cs: .
+
+:VILLAS a skos:Concept ;
+    dcterms:identifier "VILLAS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vlls"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vlls"@en ;
+    skos:topConceptOf cs: .
+
+:VISTA a skos:Concept ;
+    dcterms:identifier "VISTA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vsta"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vsta"@en ;
+    skos:topConceptOf cs: .
+
+:VUE a skos:Concept ;
+    dcterms:identifier "VUE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vue"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vue"@en ;
+    skos:topConceptOf cs: .
+
+:WADE a skos:Concept ;
+    dcterms:identifier "WADE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wade"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wade"@en ;
+    skos:topConceptOf cs: .
+
+:WALK a skos:Concept ;
+    dcterms:identifier "WALK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Walk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Walk"@en ;
+    skos:topConceptOf cs: .
+
+:WALKWAY a skos:Concept ;
+    dcterms:identifier "WALKWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wkwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wkwy"@en ;
+    skos:topConceptOf cs: .
+
+:WATERS a skos:Concept ;
+    dcterms:identifier "WATERS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wtrs"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wtrs"@en ;
+    skos:topConceptOf cs: .
+
+:WATERWAY a skos:Concept ;
+    dcterms:identifier "WATERWAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wtwy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wtwy"@en ;
+    skos:topConceptOf cs: .
+
+:WAY a skos:Concept ;
+    dcterms:identifier "WAY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Way"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Way"@en ;
+    skos:topConceptOf cs: .
+
+:WEST a skos:Concept ;
+    dcterms:identifier "WEST"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "West"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "West"@en ;
+    skos:topConceptOf cs: .
+
+:WHARF a skos:Concept ;
+    dcterms:identifier "WHARF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Whrf"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Whrf"@en ;
+    skos:topConceptOf cs: .
+
+:WOOD a skos:Concept ;
+    dcterms:identifier "WOOD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wd"@en ;
+    skos:topConceptOf cs: .
+
+:WOODS a skos:Concept ;
+    dcterms:identifier "WOODS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wds"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wds"@en ;
+    skos:topConceptOf cs: .
+
+:WYND a skos:Concept ;
+    dcterms:identifier "WYND"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Wynd"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Wynd"@en ;
+    skos:topConceptOf cs: .
+
+:YARD a skos:Concept ;
+    dcterms:identifier "YARD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Yard"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Yard"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "streetType"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Street type as an abbreviation (e.g. AV, PDE, ST), based on AS4590 road types, where applicable"@en ;
+    skos:hasTopConcept :ACCESS,
+        :ACRE,
+        :AIRWALK,
+        :ALLEY,
+        :ALLEYWAY,
+        :AMBLE,
+        :APPROACH,
+        :ARCADE,
+        :ARTERIAL,
+        :ARTERY,
+        :AVENUE,
+        :BANAN,
+        :BANK,
+        :BAY,
+        :BEACH,
+        :BEND,
+        :BOARDWALK,
+        :BOULEVARD,
+        :BOULEVARDE,
+        :BOUNDARY,
+        :BOWL,
+        :BRACE,
+        :BRAE,
+        :BRANCH,
+        :BREAK,
+        :BRETT,
+        :BRIDGE,
+        :BROADWALK,
+        :BROADWAY,
+        :BROW,
+        :BULL,
+        :BUSWAY,
+        :BYPASS,
+        :BYWAY,
+        :CAUSEWAY,
+        :CENTRE,
+        :CENTREWAY,
+        :CHASE,
+        :CIRCLE,
+        :CIRCLET,
+        :CIRCUIT,
+        :CIRCUS,
+        :CLOSE,
+        :CLUSTER,
+        :COLONNADE,
+        :COMMON,
+        :COMMONS,
+        :CONCORD,
+        :CONCOURSE,
+        :CONNECTION,
+        :CONNECTOR,
+        :COPSE,
+        :CORNER,
+        :CORSO,
+        :COURSE,
+        :COURT,
+        :COURTYARD,
+        :COVE,
+        :CRESCENT,
+        :CREST,
+        :CRIEF,
+        :CROOK,
+        :CROSS,
+        :CROSSING,
+        :CROSSOVER,
+        :CRUISEWAY,
+        :CUL-DE-SAC,
+        :CUT,
+        :CUTTING,
+        :DALE,
+        :DASH,
+        :DELL,
+        :DENE,
+        :DEVIATION,
+        :DIP,
+        :DISTRIBUTOR,
+        :DIVIDE,
+        :DOCK,
+        :DOMAIN,
+        :DOWN,
+        :DOWNS,
+        :DRIVE,
+        :DRIVEWAY,
+        :EASEMENT,
+        :EAST,
+        :EDGE,
+        :ELBOW,
+        :END,
+        :ENTRANCE,
+        :ESPLANADE,
+        :ESTATE,
+        :EXPRESSWAY,
+        :EXTENSION,
+        :FAIRWAY,
+        :FIREBREAK,
+        :FIRELINE,
+        :FIRETRACK,
+        :FIRETRAIL,
+        :FLAT,
+        :FLATS,
+        :FOLLOW,
+        :FOOTWAY,
+        :FORD,
+        :FORESHORE,
+        :FORK,
+        :FORMATION,
+        :FREEWAY,
+        :FRONT,
+        :FRONTAGE,
+        :GAP,
+        :GARDEN,
+        :GARDENS,
+        :GATE,
+        :GATEWAY,
+        :GLADE,
+        :GLEN,
+        :GRANGE,
+        :GREEN,
+        :GROVE,
+        :GULLY,
+        :HARBOUR,
+        :HAVEN,
+        :HEATH,
+        :HEIGHTS,
+        :HIGHROAD,
+        :HIGHWAY,
+        :HIKE,
+        :HILL,
+        :HILLS,
+        :HOLLOW,
+        :HUB,
+        :INLET,
+        :INTERCHANGE,
+        :ISLAND,
+        :JUNCTION,
+        :KEY,
+        :KEYS,
+        :KNOLL,
+        :LADDER,
+        :LANDING,
+        :LANE,
+        :LANEWAY,
+        :LEAD,
+        :LEADER,
+        :LINE,
+        :LINK,
+        :LOOKOUT,
+        :LOOP,
+        :LYNNE,
+        :MALL,
+        :MANOR,
+        :MART,
+        :MAZE,
+        :MEAD,
+        :MEANDER,
+        :MEW,
+        :MEWS,
+        :MILE,
+        :MOTORWAY,
+        :NOOK,
+        :NORTH,
+        :NULL,
+        :OUTLET,
+        :OUTLOOK,
+        :OVAL,
+        :PALMS,
+        :PARADE,
+        :PARADISE,
+        :PARK,
+        :PARKWAY,
+        :PART,
+        :PASS,
+        :PASSAGE,
+        :PATH,
+        :PATHWAY,
+        :PENINSULA,
+        :PIAZZA,
+        :PLACE,
+        :PLAZA,
+        :POCKET,
+        :POINT,
+        :PORT,
+        :PRECINCT,
+        :PROMENADE,
+        :PURSUIT,
+        :QUAD,
+        :QUADRANT,
+        :QUAY,
+        :QUAYS,
+        :RAMBLE,
+        :RAMP,
+        :RANGE,
+        :REACH,
+        :REEF,
+        :RESERVE,
+        :REST,
+        :RETREAT,
+        :RETURN,
+        :RIDE,
+        :RIDGE,
+        :RIGHTOFWAY,
+        :RING,
+        :RISE,
+        :RISING,
+        :RIVER,
+        :ROAD,
+        :ROADS,
+        :ROADWAY,
+        :ROTARY,
+        :ROUND,
+        :ROUTE,
+        :ROW,
+        :ROWE,
+        :RUE,
+        :RUN,
+        :SERVICEWAY,
+        :SHUNT,
+        :SKYLINE,
+        :SLOPE,
+        :SOUTH,
+        :SPUR,
+        :SQUARE,
+        :STEPS,
+        :STRAIGHT,
+        :STRAIT,
+        :STRAND,
+        :STREET,
+        :STRIP,
+        :SUBWAY,
+        :TARN,
+        :TERRACE,
+        :THOROUGHFARE,
+        :THROUGHWAY,
+        :TOLLWAY,
+        :TOP,
+        :TOR,
+        :TRACK,
+        :TRAIL,
+        :TRAMWAY,
+        :TRAVERSE,
+        :TRIANGLE,
+        :TRUNKWAY,
+        :TUNNEL,
+        :TURN,
+        :TWIST,
+        :UNDERPASS,
+        :VALE,
+        :VALLEY,
+        :VERGE,
+        :VIADUCT,
+        :VIEW,
+        :VIEWS,
+        :VILLA,
+        :VILLAGE,
+        :VILLAS,
+        :VISTA,
+        :VUE,
+        :WADE,
+        :WALK,
+        :WALKWAY,
+        :WATERS,
+        :WATERWAY,
+        :WAY,
+        :WEST,
+        :WHARF,
+        :WOOD,
+        :WOODS,
+        :WYND,
+        :YARD ;
+    skos:prefLabel "Street Type"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+

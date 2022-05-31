@@ -1,0 +1,550 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/flatType/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/flatType> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ANT a skos:Concept ;
+    dcterms:identifier "ANT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Antenna"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Antenna"@en ;
+    skos:topConceptOf cs: .
+
+:APT a skos:Concept ;
+    dcterms:identifier "APT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Apartment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Apartment"@en ;
+    skos:topConceptOf cs: .
+
+:ATM a skos:Concept ;
+    dcterms:identifier "ATM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Automated Teller Machine"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Automated Teller Machine"@en ;
+    skos:topConceptOf cs: .
+
+:BBQ a skos:Concept ;
+    dcterms:identifier "BBQ"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Barbecue"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Barbecue"@en ;
+    skos:topConceptOf cs: .
+
+:BLCK a skos:Concept ;
+    dcterms:identifier "BLCK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Block"@en ;
+    skos:topConceptOf cs: .
+
+:BLDG a skos:Concept ;
+    dcterms:identifier "BLDG"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Building"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Building"@en ;
+    skos:topConceptOf cs: .
+
+:BNGW a skos:Concept ;
+    dcterms:identifier "BNGW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bungalow"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bungalow"@en ;
+    skos:topConceptOf cs: .
+
+:BTSD a skos:Concept ;
+    dcterms:identifier "BTSD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Boatshed"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Boatshed"@en ;
+    skos:topConceptOf cs: .
+
+:CAGE a skos:Concept ;
+    dcterms:identifier "CAGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cage"@en ;
+    skos:topConceptOf cs: .
+
+:CARP a skos:Concept ;
+    dcterms:identifier "CARP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Carpark"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carpark"@en ;
+    skos:topConceptOf cs: .
+
+:CARS a skos:Concept ;
+    dcterms:identifier "CARS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Carspace"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Carspace"@en ;
+    skos:topConceptOf cs: .
+
+:CLUB a skos:Concept ;
+    dcterms:identifier "CLUB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Club"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Club"@en ;
+    skos:topConceptOf cs: .
+
+:COOL a skos:Concept ;
+    dcterms:identifier "COOL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coolroom"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Coolroom"@en ;
+    skos:topConceptOf cs: .
+
+:CTGE a skos:Concept ;
+    dcterms:identifier "CTGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cottage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Cottage"@en ;
+    skos:topConceptOf cs: .
+
+:DUPL a skos:Concept ;
+    dcterms:identifier "DUPL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Duplex"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Duplex"@en ;
+    skos:topConceptOf cs: .
+
+:FCTY a skos:Concept ;
+    dcterms:identifier "FCTY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Factory"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Factory"@en ;
+    skos:topConceptOf cs: .
+
+:FLAT a skos:Concept ;
+    dcterms:identifier "FLAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flat"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Flat"@en ;
+    skos:topConceptOf cs: .
+
+:GRGE a skos:Concept ;
+    dcterms:identifier "GRGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Garage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Garage"@en ;
+    skos:topConceptOf cs: .
+
+:HALL a skos:Concept ;
+    dcterms:identifier "HALL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hall"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hall"@en ;
+    skos:topConceptOf cs: .
+
+:HSE a skos:Concept ;
+    dcterms:identifier "HSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "House"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "House"@en ;
+    skos:topConceptOf cs: .
+
+:KSK a skos:Concept ;
+    dcterms:identifier "KSK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Kiosk"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Kiosk"@en ;
+    skos:topConceptOf cs: .
+
+:LBBY a skos:Concept ;
+    dcterms:identifier "LBBY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lobby"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lobby"@en ;
+    skos:topConceptOf cs: .
+
+:LOFT a skos:Concept ;
+    dcterms:identifier "LOFT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Loft"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Loft"@en ;
+    skos:topConceptOf cs: .
+
+:LOT a skos:Concept ;
+    dcterms:identifier "LOT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lot"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lot"@en ;
+    skos:topConceptOf cs: .
+
+:LSE a skos:Concept ;
+    dcterms:identifier "LSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lease"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lease"@en ;
+    skos:topConceptOf cs: .
+
+:MBTH a skos:Concept ;
+    dcterms:identifier "MBTH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Marine Berth"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Marine Berth"@en ;
+    skos:topConceptOf cs: .
+
+:MSNT a skos:Concept ;
+    dcterms:identifier "MSNT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Maisonette"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Maisonette"@en ;
+    skos:topConceptOf cs: .
+
+:OFFC a skos:Concept ;
+    dcterms:identifier "OFFC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Office"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Office"@en ;
+    skos:topConceptOf cs: .
+
+:PTHS a skos:Concept ;
+    dcterms:identifier "PTHS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Penthouse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Penthouse"@en ;
+    skos:topConceptOf cs: .
+
+:REAR a skos:Concept ;
+    dcterms:identifier "REAR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rear"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rear"@en ;
+    skos:topConceptOf cs: .
+
+:RESV a skos:Concept ;
+    dcterms:identifier "RESV"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Reserve"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Reserve"@en ;
+    skos:topConceptOf cs: .
+
+:ROOM a skos:Concept ;
+    dcterms:identifier "ROOM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Room"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Room"@en ;
+    skos:topConceptOf cs: .
+
+:SE a skos:Concept ;
+    dcterms:identifier "SE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Suite"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Suite"@en ;
+    skos:topConceptOf cs: .
+
+:SEC a skos:Concept ;
+    dcterms:identifier "SEC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Section"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Section"@en ;
+    skos:topConceptOf cs: .
+
+:SHED a skos:Concept ;
+    dcterms:identifier "SHED"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shed"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Shed"@en ;
+    skos:topConceptOf cs: .
+
+:SHOP a skos:Concept ;
+    dcterms:identifier "SHOP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shop"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Shop"@en ;
+    skos:topConceptOf cs: .
+
+:SHRM a skos:Concept ;
+    dcterms:identifier "SHRM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Showroom"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Showroom"@en ;
+    skos:topConceptOf cs: .
+
+:SIGN a skos:Concept ;
+    dcterms:identifier "SIGN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sign"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sign"@en ;
+    skos:topConceptOf cs: .
+
+:SITE a skos:Concept ;
+    dcterms:identifier "SITE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Site"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Site"@en ;
+    skos:topConceptOf cs: .
+
+:STLL a skos:Concept ;
+    dcterms:identifier "STLL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stall"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Stall"@en ;
+    skos:topConceptOf cs: .
+
+:STOR a skos:Concept ;
+    dcterms:identifier "STOR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Store"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Store"@en ;
+    skos:topConceptOf cs: .
+
+:STR a skos:Concept ;
+    dcterms:identifier "STR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Strata Unit"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Strata Unit"@en ;
+    skos:topConceptOf cs: .
+
+:STU a skos:Concept ;
+    dcterms:identifier "STU"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Studio"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Studio"@en ;
+    skos:topConceptOf cs: .
+
+:SUBS a skos:Concept ;
+    dcterms:identifier "SUBS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Substation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Substation"@en ;
+    skos:topConceptOf cs: .
+
+:TNCY a skos:Concept ;
+    dcterms:identifier "TNCY"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tenancy"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tenancy"@en ;
+    skos:topConceptOf cs: .
+
+:TNHS a skos:Concept ;
+    dcterms:identifier "TNHS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Townhouse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Townhouse"@en ;
+    skos:topConceptOf cs: .
+
+:TWR a skos:Concept ;
+    dcterms:identifier "TWR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tower"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tower"@en ;
+    skos:topConceptOf cs: .
+
+:UNIT a skos:Concept ;
+    dcterms:identifier "UNIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unit"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unit"@en ;
+    skos:topConceptOf cs: .
+
+:VLLA a skos:Concept ;
+    dcterms:identifier "VLLA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Villa"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Villa"@en ;
+    skos:topConceptOf cs: .
+
+:VLT a skos:Concept ;
+    dcterms:identifier "VLT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Vault"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vault"@en ;
+    skos:topConceptOf cs: .
+
+:WARD a skos:Concept ;
+    dcterms:identifier "WARD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ward"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ward"@en ;
+    skos:topConceptOf cs: .
+
+:WHSE a skos:Concept ;
+    dcterms:identifier "WHSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Warehouse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Warehouse"@en ;
+    skos:topConceptOf cs: .
+
+:WKSH a skos:Concept ;
+    dcterms:identifier "WKSH"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Workshop"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Workshop"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "flatType"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Description of flat type code"@en ;
+    skos:hasTopConcept :ANT,
+        :APT,
+        :ATM,
+        :BBQ,
+        :BLCK,
+        :BLDG,
+        :BNGW,
+        :BTSD,
+        :CAGE,
+        :CARP,
+        :CARS,
+        :CLUB,
+        :COOL,
+        :CTGE,
+        :DUPL,
+        :FCTY,
+        :FLAT,
+        :GRGE,
+        :HALL,
+        :HSE,
+        :KSK,
+        :LBBY,
+        :LOFT,
+        :LOT,
+        :LSE,
+        :MBTH,
+        :MSNT,
+        :OFFC,
+        :PTHS,
+        :REAR,
+        :RESV,
+        :ROOM,
+        :SE,
+        :SEC,
+        :SHED,
+        :SHOP,
+        :SHRM,
+        :SIGN,
+        :SITE,
+        :STLL,
+        :STOR,
+        :STR,
+        :STU,
+        :SUBS,
+        :TNCY,
+        :TNHS,
+        :TWR,
+        :UNIT,
+        :VLLA,
+        :VLT,
+        :WARD,
+        :WHSE,
+        :WKSH ;
+    skos:prefLabel "Flat Type"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+

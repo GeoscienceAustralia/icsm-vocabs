@@ -1,0 +1,580 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/addressType/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/addressType> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:R a skos:Concept ;
+    dcterms:identifier "R"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/BLOCK> a skos:Concept ;
+    dcterms:identifier "BLOCK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Block"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/CABIN> a skos:Concept ;
+    dcterms:identifier "CABIN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Cabin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Cabin"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/FLAT> a skos:Concept ;
+    dcterms:identifier "FLAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Flat"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Flat"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/HOUSE> a skos:Concept ;
+    dcterms:identifier "HOUSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural House"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural House"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/LOT> a skos:Concept ;
+    dcterms:identifier "LOT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Lot"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Lot"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RES> a skos:Concept ;
+    dcterms:identifier "RES"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Reserve"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Reserve"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RMB> a skos:Concept ;
+    dcterms:identifier "RMB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Roadside Mail Box"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Roadside Mail Box"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/ROOM> a skos:Concept ;
+    dcterms:identifier "ROOM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Room"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Room"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RSD> a skos:Concept ;
+    dcterms:identifier "RSD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Roadside Mail Delivery"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Roadside Mail Delivery"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RSM> a skos:Concept ;
+    dcterms:identifier "RSM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Roadside Mail Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Roadside Mail Service"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/SEC> a skos:Concept ;
+    dcterms:identifier "SEC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Section"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Section"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/SITE> a skos:Concept ;
+    dcterms:identifier "SITE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Site"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Site"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/R/UNIT> a skos:Concept ;
+    dcterms:identifier "UNIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural Unit"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural Unit"@en ;
+    skos:topConceptOf cs: .
+
+:UN a skos:Concept ;
+    dcterms:identifier "UN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/APT> a skos:Concept ;
+    dcterms:identifier "APT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Apartment"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Apartment"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/BLOCK> a skos:Concept ;
+    dcterms:identifier "BLOCK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Block"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CABIN> a skos:Concept ;
+    dcterms:identifier "CABIN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Cabin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Cabin"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CTGE> a skos:Concept ;
+    dcterms:identifier "CTGE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Cottage"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Cottage"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CVAN> a skos:Concept ;
+    dcterms:identifier "CVAN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Caravan"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Caravan"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/FARM> a skos:Concept ;
+    dcterms:identifier "FARM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Farm"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Farm"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/FLAT> a skos:Concept ;
+    dcterms:identifier "FLAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Flat"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Flat"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/GD> a skos:Concept ;
+    dcterms:identifier "GD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Ground Floor"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Ground Floor"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/HOUSE> a skos:Concept ;
+    dcterms:identifier "HOUSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown House"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown House"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LOC> a skos:Concept ;
+    dcterms:identifier "LOC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Location"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Location"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LOT> a skos:Concept ;
+    dcterms:identifier "LOT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Lot"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Lot"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LWR> a skos:Concept ;
+    dcterms:identifier "LWR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Lower"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Lower"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/POR> a skos:Concept ;
+    dcterms:identifier "POR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Portion"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Portion"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/PTHS> a skos:Concept ;
+    dcterms:identifier "PTHS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Penthouse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Penthouse"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/REAR> a skos:Concept ;
+    dcterms:identifier "REAR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Rear"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Rear"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RES> a skos:Concept ;
+    dcterms:identifier "RES"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Reserve"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Reserve"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RMB> a skos:Concept ;
+    dcterms:identifier "RMB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Roadside Mail Box"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Roadside Mail Box"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RMS> a skos:Concept ;
+    dcterms:identifier "RMS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Roadside Mail Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Roadside Mail Service"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/ROOM> a skos:Concept ;
+    dcterms:identifier "ROOM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Room"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Room"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RSD> a skos:Concept ;
+    dcterms:identifier "RSD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Roadside Mail Delivery"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Roadside Mail Delivery"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RSM> a skos:Concept ;
+    dcterms:identifier "RSM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Roadside Mail Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Roadside Mail Service"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/SEC> a skos:Concept ;
+    dcterms:identifier "SEC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Section"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Section"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/SITE> a skos:Concept ;
+    dcterms:identifier "SITE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Site"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Site"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/TNHS> a skos:Concept ;
+    dcterms:identifier "TNHS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Townhouse"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Townhouse"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/UNIT> a skos:Concept ;
+    dcterms:identifier "UNIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Unit"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Unit"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/VLLA> a skos:Concept ;
+    dcterms:identifier "VLLA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Unknown Villa"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown Villa"@en ;
+    skos:topConceptOf cs: .
+
+:UR a skos:Concept ;
+    dcterms:identifier "UR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/BLOCK> a skos:Concept ;
+    dcterms:identifier "BLOCK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Block"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Block"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/CABIN> a skos:Concept ;
+    dcterms:identifier "CABIN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Cabin"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Cabin"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/FLAT> a skos:Concept ;
+    dcterms:identifier "FLAT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Flat"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Flat"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/HOUSE> a skos:Concept ;
+    dcterms:identifier "HOUSE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban House"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban House"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/LOT> a skos:Concept ;
+    dcterms:identifier "LOT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Lot"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Lot"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RES> a skos:Concept ;
+    dcterms:identifier "RES"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Reserve"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Reserve"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RMB> a skos:Concept ;
+    dcterms:identifier "RMB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Roadside Mail Box"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Roadside Mail Box"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RMS> a skos:Concept ;
+    dcterms:identifier "RMS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Roadside Mail Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Roadside Mail Service"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/ROOM> a skos:Concept ;
+    dcterms:identifier "ROOM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Room"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Room"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RSD> a skos:Concept ;
+    dcterms:identifier "RSD"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Roadside Mail Delivery"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Roadside Mail Delivery"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RSM> a skos:Concept ;
+    dcterms:identifier "RSM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Roadside Mail Service"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Roadside Mail Service"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/SEC> a skos:Concept ;
+    dcterms:identifier "SEC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Section"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Section"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/SITE> a skos:Concept ;
+    dcterms:identifier "SITE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Site"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Site"@en ;
+    skos:topConceptOf cs: .
+
+<https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/UNIT> a skos:Concept ;
+    dcterms:identifier "UNIT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban Unit"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban Unit"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "addressType"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Description of address type code"@en ;
+    skos:hasTopConcept :R,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/BLOCK>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/CABIN>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/FLAT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/HOUSE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/LOT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RES>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RMB>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/ROOM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RSD>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/RSM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/SEC>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/SITE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/R/UNIT>,
+        :UN,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/APT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/BLOCK>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CABIN>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CTGE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/CVAN>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/FARM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/FLAT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/GD>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/HOUSE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LOC>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LOT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/LWR>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/POR>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/PTHS>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/REAR>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RES>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RMB>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RMS>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/ROOM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RSD>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/RSM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/SEC>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/SITE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/TNHS>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/UNIT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UN/VLLA>,
+        :UR,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/BLOCK>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/CABIN>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/FLAT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/HOUSE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/LOT>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RES>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RMB>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RMS>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/ROOM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RSD>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/RSM>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/SEC>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/SITE>,
+        <https://linked.data.gov.au/dataset/gnaf/code/addressType/UR/UNIT> ;
+    skos:prefLabel "Address Type"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+

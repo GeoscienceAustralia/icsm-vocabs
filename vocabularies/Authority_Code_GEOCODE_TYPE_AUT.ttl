@@ -1,0 +1,310 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/geocodeType/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/geocodeType> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:BAP a skos:Concept ;
+    dcterms:identifier "BAP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Of Access To The Building."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Building Access Point"@en ;
+    skos:topConceptOf cs: .
+
+:BC a skos:Concept ;
+    dcterms:identifier "BC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point As Centre Of Building And Lying Within Its Bounds (E.G. For U-Shaped Building)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Building Centroid"@en ;
+    skos:topConceptOf cs: .
+
+:CDF a skos:Concept ;
+    dcterms:identifier "CDF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Point On The Road Centre-Line Opposite The Centre Of The Road Frontage Of An Address Site."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Centre-Line Dropped Frontage"@en ;
+    skos:topConceptOf cs: .
+
+:DF a skos:Concept ;
+    dcterms:identifier "DF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Centre Of Driveway On Address Site Frontage."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Driveway Frontage"@en ;
+    skos:topConceptOf cs: .
+
+:EA a skos:Concept ;
+    dcterms:identifier "EA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Specific Building Or Property Access Point For Emergency Services."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Emergency Access"@en ;
+    skos:topConceptOf cs: .
+
+:EAS a skos:Concept ;
+    dcterms:identifier "EAS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Specific Building Or Property Secondary Access Point For Emergency Services."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Emergency Access Secondary"@en ;
+    skos:topConceptOf cs: .
+
+:ECP a skos:Concept ;
+    dcterms:identifier "ECP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Electricity Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Electricity Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:EM a skos:Concept ;
+    dcterms:identifier "EM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Electricity Meter Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Electricity Meter"@en ;
+    skos:topConceptOf cs: .
+
+:FC a skos:Concept ;
+    dcterms:identifier "FC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point On The Centre Of The Address Site Frontage."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Frontage Centre"@en ;
+    skos:topConceptOf cs: .
+
+:FCS a skos:Concept ;
+    dcterms:identifier "FCS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Point Set Back From The Centre Of The Road Frontage Within An Address Site."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Frontage Centre Setback"@en ;
+    skos:topConceptOf cs: .
+
+:FDA a skos:Concept ;
+    dcterms:identifier "FDA"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Front Door Of Building."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Front Door Access"@en ;
+    skos:topConceptOf cs: .
+
+:GCP a skos:Concept ;
+    dcterms:identifier "GCP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gas Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gas Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:GG a skos:Concept ;
+    dcterms:identifier "GG"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Programmatically Allocated During The G-Naf Production Process Proportionally Between Adjacent Address Locations (Based On Number_First)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gap Geocode"@en ;
+    skos:topConceptOf cs: .
+
+:GM a skos:Concept ;
+    dcterms:identifier "GM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gas Meter Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Gas Meter"@en ;
+    skos:topConceptOf cs: .
+
+:ICP a skos:Concept ;
+    dcterms:identifier "ICP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Internet Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Internet Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:LB a skos:Concept ;
+    dcterms:identifier "LB"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Place Where Mail Is Deposited."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Letterbox"@en ;
+    skos:topConceptOf cs: .
+
+:LOC a skos:Concept ;
+    dcterms:identifier "LOC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Representing A Locality"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Locality"@en ;
+    skos:topConceptOf cs: .
+
+:PAP a skos:Concept ;
+    dcterms:identifier "PAP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Access Point (Centre Of) At The Road Frontage Of The Property."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Property Access Point"@en ;
+    skos:topConceptOf cs: .
+
+:PAPS a skos:Concept ;
+    dcterms:identifier "PAPS"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A Point Set Back From The (Centre Of The) Access Point At The Road Frontage Of The Property."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Property Access Point Setback"@en ;
+    skos:topConceptOf cs: .
+
+:PC a skos:Concept ;
+    dcterms:identifier "PC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Of Centre Of Parcels Making Up A Property And Lying Within Its Boundaries (E.G. For L-Shaped Property)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Property Centroid"@en ;
+    skos:topConceptOf cs: .
+
+:PCM a skos:Concept ;
+    dcterms:identifier "PCM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Manually Placed Approximately At Centre Of Parcels Making Up A Property And Lying Within Its Boundaries (E.G. For L-Shaped Property)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Property Centroid Manual"@en ;
+    skos:topConceptOf cs: .
+
+:SCP a skos:Concept ;
+    dcterms:identifier "SCP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sewerage Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Sewerage Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:STL a skos:Concept ;
+    dcterms:identifier "STL"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Representing The Extent Of A Street Within A Locality"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Street Locality"@en ;
+    skos:topConceptOf cs: .
+
+:TCP a skos:Concept ;
+    dcterms:identifier "TCP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Telephone Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Telephone Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:UC a skos:Concept ;
+    dcterms:identifier "UC"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point At Centre Of Unit And Lying Within Its Bounds (E.G. For U-Shaped Unit)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unit Centroid"@en ;
+    skos:topConceptOf cs: .
+
+:UCM a skos:Concept ;
+    dcterms:identifier "UCM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Point Manually Placed Approximately At Centre Of Unit And Lying Within Its Bounds (E.G. For U-Shaped Unit)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unit Centroid Manual"@en ;
+    skos:topConceptOf cs: .
+
+:UNK a skos:Concept ;
+    dcterms:identifier "UNK"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The Type Of Real World Feature The Point Represents Is Not Known."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown"@en ;
+    skos:topConceptOf cs: .
+
+:WCP a skos:Concept ;
+    dcterms:identifier "WCP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Water Connection Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Water Connection Point"@en ;
+    skos:topConceptOf cs: .
+
+:WM a skos:Concept ;
+    dcterms:identifier "WM"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Water Meter Point (E.G. Box, Or Underground Chamber)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Water Meter"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "geocodeType"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Description of geocode type code"@en ;
+    skos:hasTopConcept :BAP,
+        :BC,
+        :CDF,
+        :DF,
+        :EA,
+        :EAS,
+        :ECP,
+        :EM,
+        :FC,
+        :FCS,
+        :FDA,
+        :GCP,
+        :GG,
+        :GM,
+        :ICP,
+        :LB,
+        :LOC,
+        :PAP,
+        :PAPS,
+        :PC,
+        :PCM,
+        :SCP,
+        :STL,
+        :TCP,
+        :UC,
+        :UCM,
+        :UNK,
+        :WCP,
+        :WM ;
+    skos:prefLabel "Geocode Type"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+

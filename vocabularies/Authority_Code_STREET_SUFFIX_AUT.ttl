@@ -1,0 +1,210 @@
+@prefix : <https://linked.data.gov.au/dataset/gnaf/code/streetSuffix/> .
+@prefix cs: <https://linked.data.gov.au/dataset/gnaf/code/streetSuffix> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iso19153: <http://def.isotc211.org/iso19135/-1/2015/CoreModel/code/RE_ItemStatus/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix status: <http://purl.org/linked-data/registry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:CN a skos:Concept ;
+    dcterms:identifier "CN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Central"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Central"@en ;
+    skos:topConceptOf cs: .
+
+:DE a skos:Concept ;
+    dcterms:identifier "DE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Deviation"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Deviation"@en ;
+    skos:topConceptOf cs: .
+
+:E a skos:Concept ;
+    dcterms:identifier "E"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "East"@en ;
+    skos:topConceptOf cs: .
+
+:EX a skos:Concept ;
+    dcterms:identifier "EX"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Extension"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Extension"@en ;
+    skos:topConceptOf cs: .
+
+:IN a skos:Concept ;
+    dcterms:identifier "IN"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Inner"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Inner"@en ;
+    skos:topConceptOf cs: .
+
+:LR a skos:Concept ;
+    dcterms:identifier "LR"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lower"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Lower"@en ;
+    skos:topConceptOf cs: .
+
+:ML a skos:Concept ;
+    dcterms:identifier "ML"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mall"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Mall"@en ;
+    skos:topConceptOf cs: .
+
+:N a skos:Concept ;
+    dcterms:identifier "N"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "North"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "North"@en ;
+    skos:topConceptOf cs: .
+
+:NE a skos:Concept ;
+    dcterms:identifier "NE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "North East"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "North East"@en ;
+    skos:topConceptOf cs: .
+
+:NW a skos:Concept ;
+    dcterms:identifier "NW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "North West"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "North West"@en ;
+    skos:topConceptOf cs: .
+
+:OF a skos:Concept ;
+    dcterms:identifier "OF"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Off"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Off"@en ;
+    skos:topConceptOf cs: .
+
+:ON a skos:Concept ;
+    dcterms:identifier "ON"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "On"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "On"@en ;
+    skos:topConceptOf cs: .
+
+:OP a skos:Concept ;
+    dcterms:identifier "OP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Overpass"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Overpass"@en ;
+    skos:topConceptOf cs: .
+
+:OT a skos:Concept ;
+    dcterms:identifier "OT"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Outer"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Outer"@en ;
+    skos:topConceptOf cs: .
+
+:S a skos:Concept ;
+    dcterms:identifier "S"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "South"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "South"@en ;
+    skos:topConceptOf cs: .
+
+:SE a skos:Concept ;
+    dcterms:identifier "SE"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "South East"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "South East"@en ;
+    skos:topConceptOf cs: .
+
+:SW a skos:Concept ;
+    dcterms:identifier "SW"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "South West"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "South West"@en ;
+    skos:topConceptOf cs: .
+
+:UP a skos:Concept ;
+    dcterms:identifier "UP"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Upper"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Upper"@en ;
+    skos:topConceptOf cs: .
+
+:W a skos:Concept ;
+    dcterms:identifier "W"^^xsd:token ;
+    status:status iso19153:original ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "West"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "West"@en ;
+    skos:topConceptOf cs: .
+
+cs: a skos:ConceptScheme ;
+    dcterms:created "2018-02-10"^^xsd:date ;
+    dcterms:identifier "streetSuffix"^^xsd:token ;
+    dcterms:modified "2022-05-30"^^xsd:date ;
+    dcterms:provenance "Automatically created from the G-NAF codelists"@en ;
+    skos:definition "Description of street suffix code"@en ;
+    skos:hasTopConcept :CN,
+        :DE,
+        :E,
+        :EX,
+        :IN,
+        :LR,
+        :ML,
+        :N,
+        :NE,
+        :NW,
+        :OF,
+        :ON,
+        :OP,
+        :OT,
+        :S,
+        :SE,
+        :SW,
+        :UP,
+        :W ;
+    skos:prefLabel "Street Suffix"@en ;
+    sdo:creator <https://linked.data.gov.au/org/ga> ;
+    sdo:publisher <https://linked.data.gov.au/org/icsm> .
+
