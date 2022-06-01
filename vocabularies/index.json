@@ -2,6 +2,7 @@
     "address-types.ttl": "https://linked.data.gov.au/def/gnaf/code/AddressTypes",
     "ground-relations.ttl": "https://linked.data.gov.au/def/fsdf/ground-relations",
     "fuels.ttl": "https://linked.data.gov.au/def/fsdf/fuels",
+    "meshblock-categories.ttl": "https://linked.data.gov.au/def/asgs/cat",
     "observable-properties.ttl": "https://linked.data.gov.au/def/fsdf/observable-properties",
     "operational-statuses.ttl": "https://linked.data.gov.au/def/fsdf/operational-statuses",
     "ownership.ttl": "https://linked.data.gov.au/def/ownership",

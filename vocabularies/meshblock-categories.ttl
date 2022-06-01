@@ -1,0 +1,205 @@
+PREFIX cs: <https://linked.data.gov.au/def/asgs/cat>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX mbcat: <https://linked.data.gov.au/def/asgs/cat/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:identifier "mbcat"^^xsd:token ;
+    dcterms:contributor <https://orcid.org/0000-0002-3884-3420> ;
+    dcterms:created "2019-12-11"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0002-8742-7730> ;
+    dcterms:modified "2022-05-03"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/abs> ;
+    dcterms:rights "(c) 2018 Australian Bureau of Statistics." ;
+    dcterms:source "https://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/1270.0.55.001~July%202016~Main%20Features~Mesh%20Blocks%20(MB)~10012"^^xsd:anyURI ;
+    skos:definition "Meshblock categories are a categorisation of Meshblock's land use, as defined by ABS"@en ;
+    skos:hasTopConcept
+        mbcat:antarctica ,
+        mbcat:commercial ,
+        mbcat:education ,
+        mbcat:hospital-medical ,
+        mbcat:industrial ,
+        mbcat:migratory ,
+        mbcat:nousualresidence ,
+        mbcat:offshore ,
+        mbcat:other ,
+        mbcat:outside-australia ,
+        mbcat:parkland ,
+        mbcat:primary-production ,
+        mbcat:residential ,
+        mbcat:shipping ,
+        mbcat:transport ,
+        mbcat:water ;
+    skos:prefLabel "Meshblock categories" ;
+.
+
+mbcat:antarctica
+    a skos:Concept ;
+    dcterms:identifier "antarctica"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Antarctica" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Antarctica" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:commercial
+    a skos:Concept ;
+    dcterms:identifier "commercial"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Commercial" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Commercial" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:education
+    a skos:Concept ;
+    dcterms:identifier "education"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Education" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Education" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:hospital-medical
+    a skos:Concept ;
+    dcterms:identifier "hospital-medical"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hospital/Medical" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Hospital/Medical" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:industrial
+    a skos:Concept ;
+    dcterms:identifier "industrial"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Industrial" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Industrial" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:migratory
+    a skos:Concept ;
+    dcterms:identifier "migratory"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Migratory" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Migratory" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:nousualresidence
+    a skos:Concept ;
+    dcterms:identifier "nousualresidence"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "No usual residence" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "No usual residence" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:offshore
+    a skos:Concept ;
+    dcterms:identifier "offshore"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Offshore" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Offshore" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:other
+    a skos:Concept ;
+    dcterms:identifier "other"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Other" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Other" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:outside-australia
+    a skos:Concept ;
+    dcterms:identifier "outside-australia"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Outside Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Outside Australia" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:parkland
+    a skos:Concept ;
+    dcterms:identifier "parkland"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Parkland" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Parkland" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:primary-production
+    a skos:Concept ;
+    dcterms:identifier "primary-production"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Primary Production" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Primary Production" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:residential
+    a skos:Concept ;
+    dcterms:identifier "residential"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Residential" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Residential" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:shipping
+    a skos:Concept ;
+    dcterms:identifier "shipping"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shipping" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Shipping" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:transport
+    a skos:Concept ;
+    dcterms:identifier "transport"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Transport" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Transport" ;
+    skos:topConceptOf cs: ;
+.
+
+mbcat:water
+    a skos:Concept ;
+    dcterms:identifier "water"^^xsd:token ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Water" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Water" ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/abs>
+    a sdo:Organization ;
+    sdo:name "Australian Bureau of Statistics" ;
+    sdo:url "https://www.abs.gov.au"^^xsd:anyURI ;
+.
